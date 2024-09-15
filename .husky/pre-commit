@@ -3,3 +3,4 @@
 
 npm run format:write
 npm run lint
+npm run build
