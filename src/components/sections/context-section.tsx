@@ -1,7 +1,11 @@
 import React from "react";
 
-const contextsection = () => {
-	return <div></div>;
+const Contextsection = () => {
+	return(
+        <div>
+
+        </div>
+    );
 };
 
-export default contextsection;
+export default Contextsection;
