@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Image from "next/image";
 import Outerlogo from "@/assets/Layer outter LOGO.png";
 
@@ -20,7 +20,6 @@ const BannerWithImages: React.FC = () => {
 			<div className="relative z-10 text-center text-white">
 				<h1 className="text-4xl md:text-6xl font-bold uppercase tracking-wider mb-4 font-sansation">
 					Register now
-				
 				</h1>
 				<p className="text-sm md:text-lg mt-16 font-sansation">
 					Lorem ipsum dolor sit amet, consectetur <br />
