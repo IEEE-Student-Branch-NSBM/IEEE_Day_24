@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import React from "react";
 import Countdown from "react-countdown";
@@ -20,7 +20,7 @@ const CountdownPage: React.FC = () => {
 	const ieeeDay = new Date("2024-10-01T00:00:00");
 
 	const renderer = ({ days, hours, minutes, seconds }: CountdownProps) => (
-		<div className="flex justify-center items-center space-x-4">
+		<div className="flex justify-center items-center mb-5 space-x-4">
 			<CountdownItem value={days} label="DAYS" />
 			<CountdownItem value={hours} label="HRS" />
 			<CountdownItem value={minutes} label="MIN" />
