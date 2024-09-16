@@ -13,10 +13,10 @@ const geistMono = localFont({
 	weight: "100 900",
 });
 const sansation = localFont({
-	src: './fonts/SansationRegular.woff',
-	variable: '--font-sansation',
-	display: 'swap',
-  })
+	src: "./fonts/SansationRegular.woff",
+	variable: "--font-sansation",
+	display: "swap",
+});
 
 export const metadata: Metadata = {
 	title: "Create Next App",
