@@ -65,13 +65,31 @@ const Carousel: React.FC = () => {
 			pagination={{ clickable: true }}
 			autoplay={{ delay: 3000 }}
 			loop
-			className="container mx-auto mt-10 max-w-[1200px]"
+			className="container mx-auto my-10 max-w-[1200px]"
+			breakpoints={{
+				410: {
+					slidesPerView: 1,
+					spaceBetween: 10,
+				},
+				640: {
+					slidesPerView: 2,
+					spaceBetween: 10,
+				},
+				1080: {
+					slidesPerView: 3,
+					spaceBetween: 10,
+				},
+			}}
 		>
 			{slides.map((slide) => (
 				<SwiperSlide key={slide.id}>
 					<Card>
 						<CardBody>
-							<Image src={slide.image} alt={slide.name} />
+							<Image
+								src={slide.image}
+								alt={slide.name}
+								className="px-5 sm:px-0 "
+							/>
 						</CardBody>
 					</Card>
 				</SwiperSlide>
