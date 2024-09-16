@@ -7,7 +7,9 @@ import EventDay from "@/assets/event-day.svg";
 
 const Timeline = () => {
   return (
-    <div className="max-w-7xl mx-auto w-full grid grid-cols-9 px-2 py-10">
+    <>
+    <h1 className="text-center text-4xl font-bold md:py-28 py-10">TIMELINE</h1>
+    <div className="max-w-7xl mx-auto w-full grid grid-cols-9 px-2 pb-10">
       {/* Stack 1 Start */}
       <div className="col-span-4 w-full h-full md:my-5 my-0 md:block hidden">
         <Image className='mx-auto' src={RegOpen} alt="Register Open" width={320} height={200} />
@@ -33,7 +35,7 @@ const Timeline = () => {
         <div className="top-0 absolute w-6 h-6 rounded-full bg-[#3DA6FF] z-10 text-white text-center"></div>
       </div>
       <div className="md:col-span-4 w-full h-full md:my-5 my-0 col-span-8 flex justify-center items-center">
-        <div className="w-full h-full rounded-md p-2 md:pl-4">
+        <div className="w-full h-full rounded-md p-2 md:pl-4 md:ml-20">
           <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium py-5">
             REGISTERATIONS <br /> CLOSE
           </h1>
@@ -68,6 +70,7 @@ const Timeline = () => {
       </div>
       
     </div>
+    </>
   );
 };
 
