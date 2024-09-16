@@ -3,6 +3,7 @@ import Carousel from "@/components/ui/carousel";
 import React from "react";
 import Countdown from "@/components/sections/countdown";
 import Timeline from "@/components/sections/Timeline";
+import BannerWithImages from "@/components/sections/register-soon";
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 			<Contextsection />
 			<Carousel />
 			<Timeline />
+			<BannerWithImages />
 		</div>
 	);
 }
