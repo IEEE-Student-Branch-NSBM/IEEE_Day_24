@@ -9,17 +9,10 @@ import Outerlogo from "@/assets/Layer outter LOGO.png";
 import IEEEday_logo from "@/assets/IEEEDAYLOGO.png";
 import styles from "./countdown.module.scss";
 
-interface CountdownProps {
-	days: number;
-	hours: number;
-	minutes: number;
-	seconds: number;
-}
-
 const CountdownPage: React.FC = () => {
 	const ieeeDay = new Date("2024-10-01T00:00:00");
 
-	const renderer = ({ days, hours, minutes, seconds }: CountdownProps) => (
+	const renderer = ({ days, hours, minutes, seconds }: any) => (
 		<div className="flex justify-center items-center mb-5 space-x-4">
 			<CountdownItem value={days} label="DAYS" />
 			<CountdownItem value={hours} label="HRS" />
