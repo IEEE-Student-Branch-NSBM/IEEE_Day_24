@@ -1,0 +1,23 @@
+.outerlayer{
+    overflow: hidden;
+    animation: spin 10s linear infinite;
+  }
+
+  .outerlayer img{
+    animation: bounce 0.2s linear infinite alternate;
+  }
+
+@keyframes spin {
+    to{
+        transform: rotate(1turn);
+        translate: 0 15px;
+    }
+}
+@keyframes bounce {
+  to{
+      translate: 0 10px;
+  }
+}
+
+
+  

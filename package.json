@@ -12,6 +12,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@designbycode/tailwindcss-text-stroke": "^1.2.1",
     "@nextui-org/button": "^2.0.38",
     "@nextui-org/card": "^2.0.34",
     "@nextui-org/image": "^2.0.32",
@@ -23,7 +24,9 @@
     "framer-motion": "^11.5.4",
     "next": "14.2.11",
     "react": "^18",
+    "react-countdown": "^2.3.6",
     "react-dom": "^18",
+    "sass": "^1.78.0",
     "swiper": "^11.1.14"
   },
   "devDependencies": {
