@@ -10,7 +10,7 @@ import TimelineTextContent from '@/components/ui/timeline/TimelineTextContent';
 const Timeline = () => {
   return (
     <>
-      <h1 className="text-center text-4xl font-bold md:py-28 py-10">TIMELINE</h1>
+      <h1 className="text-center text-3xl md:text-4xl font-semibold md:py-28 py-10">TIMELINE</h1>
       <div className="max-w-7xl mx-auto w-full grid grid-cols-9 px-2 pb-10">
         
         {/* Stack 1 */}
