@@ -22,7 +22,7 @@ const CountdownPage: React.FC = () => {
 	);
 
 	return (
-		<div className=" relative w-full h-[48rem] flex flex-col text-white overflow-hidden">
+		<div className=" relative w-full h-[48rem] flex flex-col text-white overflow-hidden ">
 			<div className="absolute inset-0">
 				<Image
 					src={backdrop}
@@ -32,8 +32,8 @@ const CountdownPage: React.FC = () => {
 					className="hidden lg:block z-[-1]"
 				/>
 			</div>
-			<div className=" relative w-full p-4 sm:p-8 lg:p-10 ">
-				<div className="flex  lg:py-4 mx-4 md:mx-24  sm:pl-3 justify-center ">
+			<div className=" relative w-full p-4 sm:p-8 lg:p-10  ">
+				<div className="flex mx-4 my-5 md:mx-24   justify-center ">
 					<div className=" w-3/4 flex flex-col md:flex-row gap-4 items-center ">
 						<div className="flex flex-col items-center md:items-start ">
 							<Image
@@ -45,34 +45,33 @@ const CountdownPage: React.FC = () => {
 						</div>
 						<div className="flex flex-col text-center md:text-left">
 							<h1 className="text-4xl sm:text-5xl lg:text-6xl">IEEE DAY</h1>
-							<h2 className="text-2xl sm:text-3xl lg:text-4xl tracking-wider">
+							<h2 className="text-2xl sm:text-3xl lg:text-4xl tracking-[1rem]">
 								2024
 							</h2>
 						</div>
 					</div>
 				</div>
-				<div className="flex justify-center items-center relative mx-4  md:mx-10  ">
-					<div className={`${styles.outerlayer} relative`}>
+				<div className="flex justify-center items-center relative mx-4 md:mx-10 ">
+					<div className="relative">
 						<Image
 							src={Outerlogo}
 							alt="Outer Logo"
 							width={800}
 							height={800}
-							className="w-[300px] sm:w-[500px] lg:w-[1150px] animate-spin-slow "
+							className="w-[310px] sm:w-[500px] lg:w-[1150px] animate-spin-slow "
 						/>
 					</div>
-					<div className="absolute mt-3 flex justify-center items-center ">
-						<div className="overflow-hidden h-[40%] sm:h-[60%] opacity-85 blur">
+					<div className="absolute  flex justify-center items-center ">
+						<div className="overflow-hidden opacity-85 sm:blur">
 							<Image
 								src={Innerlogo}
 								alt="Inner Logo"
-								width={150}
-								height={180}
-								className="sm:w-[300px] sm:h-[300px] lg:w-[580px] lg:h-[580px]"
+								width={140}
+								className="md:w-[250px] md:h-[250px] lg:w-[580px] lg:h-[580px]"
 							/>
 						</div>
 					</div>
-					<div className="absolute mt-[30rem] sm:mt-[12rem] lg:mt-[-20rem] text-center">
+					<div className="absolute md:mt-[-2rem] sm:mt-[-1rem] lg:mt-[-20rem] text-center">
 						<h2 className="text-xl sm:text-2xl lg:text-2xl">COMING SOON IN</h2>
 						<Countdown date={ieeeDay} renderer={renderer} />
 					</div>
