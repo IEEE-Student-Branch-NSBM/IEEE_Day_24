@@ -9,17 +9,10 @@ import Outerlogo from "@/assets/Layer outter LOGO.png";
 import IEEEday_logo from "@/assets/IEEEDAYLOGO.png";
 import styles from "./countdown.module.scss";
 
-interface CountdownProps {
-	days: number;
-	hours: number;
-	minutes: number;
-	seconds: number;
-}
-
 const CountdownPage: React.FC = () => {
 	const ieeeDay = new Date("2024-10-01T00:00:00");
 
-	const renderer = ({ days, hours, minutes, seconds }: CountdownProps) => (
+	const renderer = ({ days, hours, minutes, seconds }: any) => (
 		<div className="flex justify-center items-center space-x-4">
 			<CountdownItem value={days} label="DAYS" />
 			<CountdownItem value={hours} label="HRS" />
@@ -29,31 +22,33 @@ const CountdownPage: React.FC = () => {
 	);
 
 	return (
-		<div className=" relative w-full h-[45rem] flex flex-col text-white overflow-hidden">
+		<div className=" relative w-full h-[48rem] flex flex-col text-white overflow-hidden">
 			<div className="absolute inset-0">
 				<Image
 					src={backdrop}
 					alt="Background"
 					layout="fill"
 					objectFit="cover"
-					className="hidden lg:block z-[-1] blur-sm"
+					className="hidden lg:block z-[-1]"
 				/>
 			</div>
-			<div className=" relative w-full p-4 sm:p-8 lg:p-10">
-				<div className="flex flex-col md:flex-row gap-4 items-center py-4 lg:py-8 mx-4 md:mx-10 lg:pl-[7rem] sm:pl-3 ">
-					<div className="flex flex-col items-center md:items-start ">
-						<Image
-							src={IEEEday_logo}
-							alt="IEEE Day Logo"
-							width={120}
-							className="w-[80px] sm:w-[120px] lg:w-[150px]"
-						/>
-					</div>
-					<div className="flex flex-col text-center md:text-left">
-						<h1 className="text-4xl sm:text-5xl lg:text-6xl">IEEE DAY</h1>
-						<h2 className="text-2xl sm:text-3xl lg:text-4xl tracking-wider">
-							2024
-						</h2>
+			<div className=" relative w-full p-4 sm:p-8 lg:p-10 ">
+				<div className="flex  lg:py-4 mx-4 md:mx-24  sm:pl-3 justify-center ">
+					<div className=" w-3/4 flex flex-col md:flex-row gap-4 items-center ">
+						<div className="flex flex-col items-center md:items-start ">
+							<Image
+								src={IEEEday_logo}
+								alt="IEEE Day Logo"
+								width={120}
+								className="w-[80px] sm:w-[120px] lg:w-[150px]"
+							/>
+						</div>
+						<div className="flex flex-col text-center md:text-left">
+							<h1 className="text-4xl sm:text-5xl lg:text-6xl">IEEE DAY</h1>
+							<h2 className="text-2xl sm:text-3xl lg:text-4xl tracking-wider">
+								2024
+							</h2>
+						</div>
 					</div>
 				</div>
 				<div className="flex justify-center items-center relative mx-4  md:mx-10  ">
@@ -63,21 +58,21 @@ const CountdownPage: React.FC = () => {
 							alt="Outer Logo"
 							width={800}
 							height={800}
-							className="w-[300px] sm:w-[500px] lg:w-[1000px] animate-spin-slow"
+							className="w-[300px] sm:w-[500px] lg:w-[1150px] animate-spin-slow "
 						/>
 					</div>
 					<div className="absolute mt-3 flex justify-center items-center ">
-						<div className="overflow-hidden h-[40%] sm:h-[60%] opacity-85 blur-md ">
+						<div className="overflow-hidden h-[40%] sm:h-[60%] opacity-85 blur">
 							<Image
 								src={Innerlogo}
 								alt="Inner Logo"
 								width={150}
 								height={180}
-								className="sm:w-[300px] sm:h-[300px] lg:w-[495px] lg:h-[495px]"
+								className="sm:w-[300px] sm:h-[300px] lg:w-[580px] lg:h-[580px]"
 							/>
 						</div>
 					</div>
-					<div className="absolute mt-[30rem] sm:mt-[12rem] lg:mt-[-15rem] text-center">
+					<div className="absolute mt-[30rem] sm:mt-[12rem] lg:mt-[-20rem] text-center">
 						<h2 className="text-xl sm:text-2xl lg:text-2xl">COMING SOON IN</h2>
 						<Countdown date={ieeeDay} renderer={renderer} />
 					</div>
