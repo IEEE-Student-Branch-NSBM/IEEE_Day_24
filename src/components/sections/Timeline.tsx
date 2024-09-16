@@ -29,7 +29,7 @@ const Timeline = () => {
 					<div className="h-full w-1 bg-[#3DA6FF]"></div>
 					<div className="top-0 absolute w-6 h-6 rounded-full bg-[#3DA6FF] z-10 text-white text-center"></div>
 				</div>
-				<div className="md:col-span-4 w-full h-full md:my-5 mb-5 col-span-8">
+				<div className="md:col-span-4 w-full h-full md:mb-5 mb-5 col-span-8">
 					<TimelineTextContent
 						title="REGISTRATIONS OPEN"
 						description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -51,11 +51,11 @@ const Timeline = () => {
 					<div className="h-full w-1 bg-white"></div>
 					<div className="top-0 absolute w-6 h-6 rounded-full bg-[#3DA6FF] z-10 text-white text-center"></div>
 				</div>
-				<div className="col-span-4 w-full h-full md:my-5 mb-5 md:block hidden">
+				<div className="col-span-4 w-full h-full md:mb-5 mb-5 md:block hidden">
 					<Image
 						src={RegClose}
 						alt="Register Closed"
-						width={320}
+						width={250}
 						height={200}
 					/>
 				</div>
@@ -65,10 +65,12 @@ const Timeline = () => {
 					<Image
 						src={EventDay}
 						alt="IEEE Day Logo"
-						className="w-20 h-auto md:w-80 mx-auto"
+						className="mx-auto"
+						width={250}
 					/>
 				</div>
 				<div className="relative col-span-1 w-full h-full flex justify-center items-center">
+				<div className="h-full w-1 bg-white md:hidden"></div>
 					<div className="top-0 absolute w-6 h-6 rounded-full bg-white z-10 text-white text-center"></div>
 				</div>
 				<div className="md:col-span-4 w-full h-full md:my-5 my-0 col-span-8">
