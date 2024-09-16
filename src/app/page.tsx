@@ -6,7 +6,7 @@ import Countdown from "@/components/sections/countdown";
 export default function Home() {
 	return (
 		<div>
-      <Countdown/>
+      		<Countdown/>
 			<Contextsection />
 			<Carousel />
 		</div>

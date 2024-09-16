@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 import React from 'react';
 import Countdown from 'react-countdown';
@@ -29,7 +29,7 @@ const CountdownPage: React.FC = () => {
           alt="Background"
           layout="fill"
           objectFit="cover"
-          className="hidden lg:block z-[-1]" 
+          className="hidden lg:block z-[-1] blur-sm" 
         />
       </div>
       <div className=" relative w-full p-4 sm:p-8 lg:p-10">
@@ -54,11 +54,11 @@ const CountdownPage: React.FC = () => {
               alt="Outer Logo"
               width={800}
               height={800}
-              className="w-[300px] sm:w-[500px] lg:w-[1000px] "
+              className="w-[300px] sm:w-[500px] lg:w-[1000px] animate-spin-slow"
             />
           </div>
           <div className="absolute mt-3 flex justify-center items-center ">
-            <div className="overflow-hidden h-[40%] sm:h-[60%] opacity-85 blur">
+            <div className="overflow-hidden h-[40%] sm:h-[60%] opacity-85 blur-md ">
               <Image
                 src={Innerlogo}
                 alt="Inner Logo"
