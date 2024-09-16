@@ -6,12 +6,15 @@ import { Card, CardBody } from "@nextui-org/react";
 import Image, { StaticImageData } from "next/image";
 import image1 from "@/assets/image-1.jpg";
 import image2 from "@/assets/image-2.jpg";
-import image3 from "@/assets/image-3.jpeg";
-import image4 from "@/assets/image-4.jpeg";
-import image5 from "@/assets/image-5.jpeg";
-import image6 from "@/assets/image-6.jpeg";
-
-// Import Swiper styles
+import image3 from "@/assets/image-3.jpg";
+import image4 from "@/assets/image-4.jpg";
+import image5 from "@/assets/image-5.jpg";
+import image6 from "@/assets/image-6.jpg";
+import image7 from "@/assets/image-7.jpg";
+import image8 from "@/assets/image-8.jpg";
+import image9 from "@/assets/image-9.jpg";
+import image10 from "@/assets/image-10.jpg";
+import image11 from "@/assets/image-11.jpg";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -54,6 +57,31 @@ const Carousel: React.FC = () => {
 			image: image6,
 			name: "image6",
 		},
+		{
+			id: 7,
+			image: image7,
+			name: "image7",
+		},
+		{
+			id: 8,
+			image: image8,
+			name: "image8",
+		},
+		{
+			id: 9,
+			image: image9,
+			name: "image9",
+		},
+		{
+			id: 10,
+			image: image10,
+			name: "image10",
+		},
+		{
+			id: 11,
+			image: image11,
+			name: "image11",
+		},
 	];
 
 	return (
@@ -65,7 +93,7 @@ const Carousel: React.FC = () => {
 			pagination={{ clickable: true }}
 			autoplay={{ delay: 3000 }}
 			loop
-			className="container mx-auto my-10 max-w-[1200px]"
+			className="container mx-auto my-10 max-w-[390px] sm:max-w-[790px] lg:max-w-[1220px] xl:max-w-[1440px]"
 			breakpoints={{
 				410: {
 					slidesPerView: 1,
@@ -77,18 +105,20 @@ const Carousel: React.FC = () => {
 				},
 				1080: {
 					slidesPerView: 3,
-					spaceBetween: 10,
+					spaceBetween: 15,
 				},
 			}}
 		>
 			{slides.map((slide) => (
 				<SwiperSlide key={slide.id}>
 					<Card>
-						<CardBody>
+						<CardBody className="aspect-video relative overflow-hidden">
 							<Image
 								src={slide.image}
 								alt={slide.name}
-								className="px-5 sm:px-0 "
+								objectFit="cover"
+								layout="fill"
+								className="hover:scale-105"
 							/>
 						</CardBody>
 					</Card>
