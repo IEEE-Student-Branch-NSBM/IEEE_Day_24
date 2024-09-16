@@ -27,6 +27,7 @@
     "react-countdown": "^2.3.6",
     "react-dom": "^18",
     "sass": "^1.78.0",
+    "sharp": "^0.33.5",
     "swiper": "^11.1.14"
   },
   "devDependencies": {

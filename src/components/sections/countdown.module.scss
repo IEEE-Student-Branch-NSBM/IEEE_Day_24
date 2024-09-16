@@ -1,11 +1,11 @@
-.outerlayer{
+/**.outerlayer{
     overflow: hidden;
-    animation: spin 10s linear infinite;
+    animation: spin 20s linear infinite;
   }
 
-  .outerlayer img{
+  /**.outerlayer img{
     animation: bounce 0.2s linear infinite alternate;
-  }
+  }*/
 
 @keyframes spin {
     to{
@@ -13,11 +13,11 @@
         translate: 0 15px;
     }
 }
-@keyframes bounce {
+/**@keyframes bounce {
   to{
       translate: 0 10px;
   }
-}
+}*/
 
 
   
