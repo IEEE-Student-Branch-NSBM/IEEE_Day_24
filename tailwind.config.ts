@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       animation:{
-        'spin-slow': 'spin 20s linear infinite',
+        'spin-slow': 'spin 30s linear infinite',
       },
       colors: {
         background: "var(--background)",
