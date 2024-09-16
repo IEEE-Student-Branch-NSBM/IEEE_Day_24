@@ -14,7 +14,7 @@ export default function Home() {
 			<Carousel />
 			<Timeline />
 			<BannerWithImages />
-			<Register/>
+			<Register />
 		</div>
 	);
 }
