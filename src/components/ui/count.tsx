@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const CountdownItem: React.FC<{ value: string; label: string }> = ({
 	value,
 	label,
