@@ -62,20 +62,18 @@ const CountdownComponent: React.FC = () => {
 	}
 
 	return (
-		<div className="relative w-full  h-[43rem] flex flex-col text-white overflow-hidden ">
+		<div className="relative w-full   h-[47rem] flex flex-col text-white overflow-hidden ">
 			<div className="absolute inset-0 ">
 				<Image
 					src={backdrop}
 					alt="Background"
 					className="hidden lg:block z-[-1]"
-					fill
-					sizes="100vw"
-					style={{
-						objectFit: "cover",
-					}}
+					layout="fill"
+					objectFit="cover"
+					
 				/>
 			</div>
-			<div className="relative w-full p-4 sm:p-8 lg:px-4 lg:pt-6">
+			<div className="relative w-full p-4 sm:p-8 lg:px-4 lg:pt-8">
 				<div className="flex mx-4  md:mx-10 lg:px-20 justify-center">
 					<div className="w-3/4 flex flex-col md:flex-row gap-4 items-center">
 						<div className="flex flex-col items-center md:items-start">
@@ -84,20 +82,20 @@ const CountdownComponent: React.FC = () => {
 								alt="IEEE Day Logo"
 								width={1000}
 								height={1000}
-								className="w-[80px] sm:w-[120px] lg:w-[120px] hidden lg:block z-[-1]"
+								className="w-[80px] sm:w-[120px] lg:w-[150px] hidden lg:block z-[-1]"
 							/>
 						</div>
 						<div className="flex flex-col text-center md:text-left font-sansation text-shadow-sm ">
-							<h1 className="text-4xl sm:text-5xl lg:text-6xl tracking-wider">
+							<h1 className="text-4xl sm:text-5xl lg:text-8xl tracking-wider">
 								IEEE DAY
 							</h1>
-							<h2 className="text-2xl sm:text-3xl lg:text-3xl tracking-[1rem]">
+							<h2 className="text-2xl sm:text-3xl lg:text-6xl tracking-[1rem]">
 								2024
 							</h2>
 						</div>
 					</div>
 				</div>
-				<div className="flex justify-center items-center relative mx-4 md:mx-10 py-10 lg:py-5 md:py-1  ">
+				<div className="flex justify-center items-center relative mx-4 md:mx-10 py-10 lg:py-16 md:py-1  ">
 					<div className="relative">
 						<Image
 							src={Outerlogo}
