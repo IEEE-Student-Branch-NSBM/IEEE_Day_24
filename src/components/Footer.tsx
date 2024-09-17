@@ -12,12 +12,6 @@ const Footer: React.FC = () => {
 			{/* For mobile version only */}
 			<div className="flex flex-col sm:flex-row justify-center items-center space-y-6 sm:space-y-0 sm:space-x-10 lg:hidden">
 
-			
-				<div className="flex items-center justify-center">
-					<Image src={IEECSLogo} alt="SB Logo" width={150} height={65} />
-				</div>
-
-				
 				<div className="flex items-center justify-center">
 					<Image src={IEEBarImage} alt="IEEE Logo" width={222} height={32} />
 				</div>
@@ -26,9 +20,16 @@ const Footer: React.FC = () => {
 				<div className="flex items-center justify-center">
 					<Image src={WIEImage} alt="WIE Logo" width={222} height={32} />
 				</div>
+
+				
+				<div className="flex items-center justify-center">
+					<Image src={IEECSLogo} alt="SB Logo" width={150} height={65} />
+				</div>
 			</div>
 
-			{/* For mobile version only */}
+
+
+			{/* For pc version only */}
 			<div className="hidden md:block">
 
 				<div className="flex flex-col items-center absolute w-[150px] h-[65px] left-1/2 transform -translate-x-1/2 top-[40px]">
@@ -47,7 +48,7 @@ const Footer: React.FC = () => {
 			</div>
 
 		
-			<div className="absolute w-[90%] sm:w-[80%] md:w-[70%] lg:w-[1140px] h-0.6 border border-white left-1/2 transform -translate-x-1/2 top-[35%] md:top-[32.44%]" />
+			<div className="absolute w-[90%] sm:w-[80%] md:w-[70%] lg:w-[1140px] h-0.6 border border-white left-1/2 transform -translate-x-1/2 top-[34%] md:top-[32.44%]" />
 
 			
 			<div className="absolute left-[5%] right-[5%] top-[38%] sm:top-[30%] md:left-[10.42%] md:right-[63.89%] md:top-[35%]">
@@ -56,7 +57,7 @@ const Footer: React.FC = () => {
 				</h3>
 			</div>
 
-			{/* IEEE Day Logo for Mobile */}
+			{/* image for mobile version */}
 			<div className="absolute left-1/2 transform -translate-x-1/2 top-[46%] sm:top-[42%] md:hidden flex justify-center items-center">
 				<Image
 					src={IEEDAYLogo}
@@ -74,7 +75,7 @@ const Footer: React.FC = () => {
 				</p>
 			</div>
 
-			{/* IEEE Day Logo for PC screens */}
+			
 			<div className="absolute hidden md:block left-[65%] top-[30%] md:left-[76.65%] md:top-[39.27%]">
 				<Image
 					src={IEEDAYLogo}
@@ -85,8 +86,8 @@ const Footer: React.FC = () => {
 				/>
 			</div>
 
-			{/* Social Icons */}
-			<div className="absolute left-1/2 transform -translate-x-1/2 top-[82%] sm:top-[78%]">
+			
+			<div className="absolute left-1/2 transform -translate-x-1/2 top-[82%] sm:top-[78%] lg:top-[82%]">
 				<Image
 					src={SocialIcons}
 					width={96}
@@ -95,8 +96,8 @@ const Footer: React.FC = () => {
 				/>
 			</div>
 
-			{/* Footer Text */}
-			<div className="absolute w-[223px] left-1/2 transform -translate-x-1/2 top-[89%] sm:top-[86%] text-center">
+
+			<div className="absolute w-[223px] left-1/2 transform -translate-x-1/2 top-[89%] sm:top-[86%] lg:top-[92%] text-center">
 				<a
 					href="https://www.computer.org"
 					target="_blank"
