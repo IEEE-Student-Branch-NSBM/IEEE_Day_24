@@ -6,18 +6,17 @@ import { Button } from "@nextui-org/button";
 const Register: React.FC = () => {
 	return (
 		<div className="relative bg-[#010b13] hidden items-center justify-center h-[25rem] lg:h-[35rem] overflow-hidden">
-			
 			<div className="absolute inset-0 flex items-center justify-center">
 				<Image
 					src={Outerlogo}
 					alt="Background with icons"
 					width={2000}
 					height={2000}
-					className="min-w-[800px] sm:w-[500px] lg:w-[1200px] animate-spin-slow z-0"
-					style={{
-						maxWidth: "100%",
-						height: "auto",
-					}}
+					className="min-w-[600px] sm:w-[500px] lg:w-[1200px] animate-spin-slow z-0"
+					// style={{
+					// 	maxWidth: "100%",
+					// 	height: "auto",
+					// }}
 				/>
 			</div>
 
