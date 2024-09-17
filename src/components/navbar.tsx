@@ -5,19 +5,20 @@ import { Button } from "@nextui-org/button";
 
 const Navbar: React.FC = () => {
 	return (
-        <nav className="bg-blue-950 p-2">
+		<nav className="bg-blue-950 p-2">
 			<div className="container mx-auto flex flex-wrap items-center justify-between">
 				<div className="flex items-center space-x-4">
 					<Image
-                        src={logo}
-                        width={300}
-                        height={200}
-                        alt="NSBM Logo"
-                        className="  mb-2 ml-15 mt-2"
-                        style={{
-                            maxWidth: "100%",
-                            height: "auto"
-                        }} />
+						src={logo}
+						width={300}
+						height={200}
+						alt="NSBM Logo"
+						className="  mb-2 ml-15 mt-2"
+						style={{
+							maxWidth: "100%",
+							height: "auto",
+						}}
+					/>
 				</div>
 
 				<div className="mt-2 md:mt-0">
@@ -34,7 +35,7 @@ const Navbar: React.FC = () => {
 				</div>
 			</div>
 		</nav>
-    );
+	);
 };
 
 export default Navbar;

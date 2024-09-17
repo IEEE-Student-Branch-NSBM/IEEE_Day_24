@@ -4,19 +4,20 @@ import Outerlogo from "@/assets/Layer outter LOGO.png";
 
 const BannerWithImages: React.FC = () => {
 	return (
-        <div className="relative bg-[#010b13] flex items-center justify-center h-screen overflow-hidden">
+		<div className="relative bg-[#010b13] flex items-center justify-center h-screen overflow-hidden">
 			{/* Background Image */}
 			<div className="absolute inset-0 flex items-center justify-center">
 				<Image
-                    src={Outerlogo}
-                    alt="Background with icons"
-                    width={1150}
-                    height={1150}
-                    className="w-[310px] sm:w-[500px] lg:w-[1150px] animate-spin-slow z-0"
-                    style={{
-                        maxWidth: "100%",
-                        height: "auto"
-                    }} />
+					src={Outerlogo}
+					alt="Background with icons"
+					width={1150}
+					height={1150}
+					className="w-[310px] sm:w-[500px] lg:w-[1150px] animate-spin-slow z-0"
+					style={{
+						maxWidth: "100%",
+						height: "auto",
+					}}
+				/>
 			</div>
 
 			{/* Centered Text */}
@@ -36,7 +37,7 @@ const BannerWithImages: React.FC = () => {
 				</button>
 			</div>
 		</div>
-    );
+	);
 };
 
 export default BannerWithImages;

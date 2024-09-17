@@ -85,7 +85,7 @@ const Carousel: React.FC = () => {
 	];
 
 	return (
-        <Swiper
+		<Swiper
 			modules={[Navigation, Pagination, Autoplay]}
 			spaceBetween={10}
 			slidesPerView={3}
@@ -114,20 +114,21 @@ const Carousel: React.FC = () => {
 					<Card>
 						<CardBody className="aspect-[3/2] relative overflow-hidden">
 							<Image
-                                src={slide.image}
-                                alt={slide.name}
-                                className="translate-transaform duration-300 hover:scale-105"
-                                fill
-                                sizes="100vw"
-                                style={{
-                                    objectFit: "cover"
-                                }} />
+								src={slide.image}
+								alt={slide.name}
+								className="translate-transaform duration-300 hover:scale-105"
+								fill
+								sizes="100vw"
+								style={{
+									objectFit: "cover",
+								}}
+							/>
 						</CardBody>
 					</Card>
 				</SwiperSlide>
 			))}
 		</Swiper>
-    );
+	);
 };
 
 export default Carousel;
