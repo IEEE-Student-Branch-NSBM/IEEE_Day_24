@@ -93,7 +93,7 @@ const Carousel: React.FC = () => {
 			pagination={{ clickable: true }}
 			autoplay={{ delay: 3000 }}
 			loop
-			className="container mx-auto my-10 max-w-[390px] sm:max-w-[790px] lg:max-w-[1220px] xl:max-w-[1440px]"
+			className="container mx-auto my-10 max-w-[390px] sm:max-w-[790px] lg:max-w-[1200px]"
 			breakpoints={{
 				410: {
 					slidesPerView: 1,
@@ -112,13 +112,16 @@ const Carousel: React.FC = () => {
 			{slides.map((slide) => (
 				<SwiperSlide key={slide.id}>
 					<Card>
-						<CardBody className="aspect-video relative overflow-hidden">
+						<CardBody className="aspect-[3/2] relative overflow-hidden">
 							<Image
 								src={slide.image}
 								alt={slide.name}
-								objectFit="cover"
-								layout="fill"
-								className="hover:scale-105"
+								className="translate-transaform duration-300 hover:scale-105"
+								fill
+								sizes="100vw"
+								style={{
+									objectFit: "cover",
+								}}
 							/>
 						</CardBody>
 					</Card>

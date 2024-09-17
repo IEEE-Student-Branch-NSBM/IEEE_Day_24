@@ -67,9 +67,12 @@ const CountdownComponent: React.FC = () => {
 				<Image
 					src={backdrop}
 					alt="Background"
-					layout="fill"
-					objectFit="cover"
 					className="hidden lg:block z-[-1]"
+					fill
+					sizes="100vw"
+					style={{
+						objectFit: "cover",
+					}}
 				/>
 			</div>
 			<div className="relative w-full p-4 sm:p-8 lg:p-10">
@@ -81,6 +84,10 @@ const CountdownComponent: React.FC = () => {
 								alt="IEEE Day Logo"
 								width={120}
 								className="w-[80px] sm:w-[120px] lg:w-[150px] hidden lg:block z-[-1]"
+								style={{
+									maxWidth: "100%",
+									height: "auto",
+								}}
 							/>
 						</div>
 						<div className="flex flex-col text-center md:text-left font-sansation text-shadow-sm ">
@@ -99,6 +106,10 @@ const CountdownComponent: React.FC = () => {
 							width={800}
 							height={800}
 							className="w-[310px] sm:w-[500px] lg:w-[1150px] pb-1 animate-spin-slow"
+							style={{
+								maxWidth: "100%",
+								height: "auto",
+							}}
 						/>
 					</div>
 					<div className="absolute flex justify-center items-center">
@@ -108,6 +119,10 @@ const CountdownComponent: React.FC = () => {
 								alt="Inner Logo"
 								width={140}
 								className="md:w-[250px] md:h-[250px] lg:w-[580px] lg:h-[580px]"
+								style={{
+									maxWidth: "100%",
+									height: "auto",
+								}}
 							/>
 						</div>
 					</div>
