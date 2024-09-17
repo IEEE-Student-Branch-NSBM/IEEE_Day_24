@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import logo from "@/assets/sb-logo.png";
 import { Button } from "@nextui-org/button";
 

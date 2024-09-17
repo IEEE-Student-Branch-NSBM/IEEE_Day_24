@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 // images
 import RegOpen from "@/assets/reg-open.svg";

@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import Countdown from "react-countdown";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import backdrop from "@/assets/background 2.png";
 import Innerlogo from "@/assets/innerlogo.png";
 import Outerlogo from "@/assets/Layer outter LOGO.png";

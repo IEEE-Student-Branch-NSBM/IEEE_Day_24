@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Outerlogo from "@/assets/Layer outter LOGO.png";
 
 const BannerWithImages: React.FC = () => {

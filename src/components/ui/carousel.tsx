@@ -3,7 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Card, CardBody } from "@nextui-org/react";
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/legacy/image";
 import image1 from "@/assets/image-1.jpg";
 import image2 from "@/assets/image-2.jpg";
 import image3 from "@/assets/image-3.jpg";
@@ -91,7 +91,6 @@ const Carousel: React.FC = () => {
 			slidesPerView={3}
 			navigation={false}
 			pagination={{ clickable: true }}
-			parallax={true}
 			autoplay={{ delay: 3000 }}
 			loop
 			className="container mx-auto my-10 max-w-[390px] sm:max-w-[790px] lg:max-w-[1200px]"
