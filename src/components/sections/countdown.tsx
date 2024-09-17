@@ -88,7 +88,9 @@ const CountdownComponent: React.FC = () => {
 							/>
 						</div>
 						<div className="flex flex-col text-center md:text-left font-sansation text-shadow-sm ">
-							<h1 className="text-4xl sm:text-5xl lg:text-6xl tracking-wider">IEEE DAY</h1>
+							<h1 className="text-4xl sm:text-5xl lg:text-6xl tracking-wider">
+								IEEE DAY
+							</h1>
 							<h2 className="text-2xl sm:text-3xl lg:text-3xl tracking-[1rem]">
 								2024
 							</h2>
