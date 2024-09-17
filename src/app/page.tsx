@@ -11,7 +11,7 @@ export default function Home() {
 			<Countdown />
 			<Contextsection />
 			<Timeline />
-			<BannerWithImages />
+			{/**<BannerWithImages />*/}
 			<Register />
 		</div>
 	);
