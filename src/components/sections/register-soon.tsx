@@ -14,6 +14,10 @@ const BannerWithImages: React.FC = () => {
 					width={1150}
 					height={1150}
 					className="w-[310px] sm:w-[500px] lg:w-[1150px] animate-spin-slow"
+					style={{
+						maxWidth: "100%",
+						height: "auto",
+					}}
 				/>
 
 				{/* Centered Text */}
