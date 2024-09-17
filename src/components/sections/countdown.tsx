@@ -62,7 +62,7 @@ const CountdownComponent: React.FC = () => {
 	}
 
 	return (
-		<div className="relative w-full   h-[47rem] flex flex-col text-white overflow-hidden ">
+		<div className="relative w-full   h-[47rem] lg:h-[42rem] xl:h-[55rem]  flex flex-col text-white overflow-hidden ">
 			<div className="absolute inset-0 ">
 				<Image
 					src={backdrop}
@@ -70,7 +70,6 @@ const CountdownComponent: React.FC = () => {
 					className="hidden lg:block z-[-1]"
 					layout="fill"
 					objectFit="cover"
-					
 				/>
 			</div>
 			<div className="relative w-full p-4 sm:p-8 lg:px-4 lg:pt-8">
@@ -82,11 +81,11 @@ const CountdownComponent: React.FC = () => {
 								alt="IEEE Day Logo"
 								width={1000}
 								height={1000}
-								className="w-[80px] sm:w-[120px] lg:w-[150px] hidden lg:block z-[-1]"
+								className="w-[80px] sm:w-[130px] lg:w-[150px] hidden lg:block z-[-1]"
 							/>
 						</div>
 						<div className="flex flex-col text-center md:text-left font-sansation text-shadow-sm ">
-							<h1 className="text-4xl sm:text-5xl lg:text-8xl tracking-wider">
+							<h1 className="text-4xl md:text-4xl lg:text-6xl xl:text-8xl tracking-wider">
 								IEEE DAY
 							</h1>
 							<h2 className="text-2xl sm:text-3xl lg:text-6xl tracking-[1rem]">
@@ -95,14 +94,14 @@ const CountdownComponent: React.FC = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex justify-center items-center relative mx-4 md:mx-10 py-10 lg:py-16 md:py-1  ">
+				<div className="flex justify-center items-center relative mx-4 md:mx-10 py-10 lg:py-16 md:py-1 xl:mt-5  ">
 					<div className="relative">
 						<Image
 							src={Outerlogo}
 							alt="Outer Logo"
 							width={1500}
 							height={1500}
-							className="w-[310px] sm:w-[500px] lg:w-[1100px] pb-1 drop-shadow-[0_-8px_3px_rgba(0,0,0,0.5)] animate-spin-slow"
+							className="w-[310px] sm:w-[500px] lg:w-[1100px] xl:w-[1300px] pb-1 drop-shadow-[0_-8px_3px_rgba(0,0,0,0.5)] animate-spin-slow"
 						/>
 					</div>
 					<div className="absolute flex justify-center items-center">
@@ -111,12 +110,12 @@ const CountdownComponent: React.FC = () => {
 								src={Innerlogo}
 								alt="Inner Logo"
 								width={140}
-								className="w-[140] md:w-[250px] md:h-[250px] lg:w-[580px] lg:h-[580px]"
+								className="w-[140] md:w-[250px] md:h-[250px] lg:w-[490px] lg:h-[490px] xl:w-[700px] xl:h-[700px]"
 							/>
 						</div>
 					</div>
-					<div className="absolute mt-[35rem] sm:mt-[-1rem] lg:mt-[-20rem] text-center font-sansation ">
-						<h2 className="text-xl sm:text-2xl lg:text-2xl">COMING SOON IN</h2>
+					<div className="absolute mt-[35rem] sm:mt-[-1rem] lg:mt-[-16rem] xl:mt-[-23rem] text-center font-sansation ">
+						<h2 className="text-xl sm:text-2xl lg:text-2xl xl:text-4xl">COMING SOON IN</h2>
 						<Countdown date={ieeeDay} renderer={renderer} />
 					</div>
 				</div>
