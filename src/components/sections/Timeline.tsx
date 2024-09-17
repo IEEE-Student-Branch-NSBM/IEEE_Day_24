@@ -10,8 +10,8 @@ const Timeline = () => {
 	return (
 		<>
 			<h1 className="font-sansation text-center text-3xl md:text-4xl md:py-20 py-20">
-                TIMELINE
-            </h1>
+				TIMELINE
+			</h1>
 
 			<div className="max-w-7xl mx-auto w-full grid grid-cols-9 px-2 pb-10">
 				{/* Stack 1 */}

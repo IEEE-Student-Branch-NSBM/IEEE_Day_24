@@ -12,7 +12,7 @@ export default function Home() {
 			<Countdown />
 			<Contextsection />
 			<Timeline />
-			<Session/>
+			<Session />
 			{/**<BannerWithImages />*/}
 			<Register />
 		</div>
