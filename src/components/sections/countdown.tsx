@@ -21,7 +21,7 @@ const CountdownComponent: React.FC = () => {
 		setIsClient(true);
 	}, []);
 
-	const ieeeDay = new Date("2024-10-10T00:00:00");
+	const ieeeDay = new Date("2024-10-09T00:00:00");
 
 	const renderer = ({
 		days,
@@ -83,8 +83,8 @@ const CountdownComponent: React.FC = () => {
 								className="w-[80px] sm:w-[120px] lg:w-[150px] hidden lg:block z-[-1]"
 							/>
 						</div>
-						<div className="flex flex-col text-center md:text-left">
-							<h1 className="text-4xl sm:text-5xl lg:text-6xl">IEEE DAY</h1>
+						<div className="flex flex-col text-center md:text-left font-sansation text-shadow-sm ">
+							<h1 className="text-4xl sm:text-5xl lg:text-7xl ">IEEE DAY</h1>
 							<h2 className="text-2xl sm:text-3xl lg:text-4xl tracking-[1rem]">
 								2024
 							</h2>
@@ -111,7 +111,7 @@ const CountdownComponent: React.FC = () => {
 							/>
 						</div>
 					</div>
-					<div className="absolute mt-[40rem] sm:mt-[-1rem] lg:mt-[-20rem] text-center">
+					<div className="absolute mt-[40rem] sm:mt-[-1rem] lg:mt-[-20rem] text-center font-sansation ">
 						<h2 className="text-xl sm:text-2xl lg:text-2xl">COMING SOON IN</h2>
 						<Countdown date={ieeeDay} renderer={renderer} />
 					</div>

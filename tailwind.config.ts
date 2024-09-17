@@ -24,6 +24,7 @@ const config: Config = {
   },
   plugins:[
     require("@designbycode/tailwindcss-text-stroke"),
+    require("@designbycode/tailwindcss-text-shadow"),
   ],
 };
 export default config;
