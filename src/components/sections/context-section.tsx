@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardHeader, CardBody } from "@nextui-org/card";
+import Carousel from "../ui/carousel";
 const Contextsection = () => {
 	return (
 		<div className="container mx-auto lg:mt-10 max-w-[1200px]">
@@ -35,6 +36,7 @@ const Contextsection = () => {
 					</CardBody>
 				</Card>
 			</div>
+			<Carousel />
 		</div>
 	);
 };
