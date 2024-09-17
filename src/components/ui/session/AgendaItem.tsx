@@ -9,10 +9,10 @@ interface AgendaItemProps {
 
 const AgendaItem: React.FC<AgendaItemProps> = ({ phaseNumber, phaseTitle, time, description }) => {
   return (
-    <div className="flex flex-col md:flex-row items-start p-4 md:p-6 rounded-lg text-white my-5">
+    <div className="flex flex-col md:flex-row items-center p-4 md:p-6 rounded-lg text-white my-5">
       {/* Phase Number */}
       <div className="flex flex-col items-center justify-center text-center p-5 border-b md:border-b-0 md:border-r border-gray-500 mb-4 md:mb-0 md:mr-5">
-        <div className="text-4xl font-bold">{phaseNumber}</div>
+        <div className="text-4xl font-sansation">{phaseNumber}</div>
         <div className="text-sm text-gray-400">phase</div>
       </div>
 
@@ -20,12 +20,12 @@ const AgendaItem: React.FC<AgendaItemProps> = ({ phaseNumber, phaseTitle, time, 
       <div className="flex-1">
         {/* Title and Time in the same row */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
-          <h2 className="text-[26px] md:text-2xl font-semibold">{phaseTitle}</h2>
+          <h2 className="text-[26px] md:text-2xl font-sansation">{phaseTitle}</h2>
           <div className="text-[16px] font-medium mt-2 md:mt-0">{time}</div>
         </div>
 
         {/* Description below */}
-        <p className="mt-2 text-sm text-gray-300">{description}</p>
+        <p className="mt-2 text-base text-gray-300">{description}</p>
       </div>
     </div>
   );
