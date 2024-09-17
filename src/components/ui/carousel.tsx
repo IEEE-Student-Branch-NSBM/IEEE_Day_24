@@ -91,7 +91,6 @@ const Carousel: React.FC = () => {
 			slidesPerView={3}
 			navigation={false}
 			pagination={{ clickable: true }}
-			parallax={true}
 			autoplay={{ delay: 3000 }}
 			loop
 			className="container mx-auto my-10 max-w-[390px] sm:max-w-[790px] lg:max-w-[1200px]"
@@ -117,9 +116,12 @@ const Carousel: React.FC = () => {
 							<Image
 								src={slide.image}
 								alt={slide.name}
-								objectFit="cover"
-								layout="fill"
 								className="translate-transaform duration-300 hover:scale-105"
+								fill
+								sizes="100vw"
+								style={{
+									objectFit: "cover",
+								}}
 							/>
 						</CardBody>
 					</Card>

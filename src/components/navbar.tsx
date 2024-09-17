@@ -14,6 +14,10 @@ const Navbar: React.FC = () => {
 						height={200}
 						alt="NSBM Logo"
 						className="  mb-2 ml-15 mt-2"
+						style={{
+							maxWidth: "100%",
+							height: "auto",
+						}}
 					/>
 				</div>
 

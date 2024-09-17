@@ -22,6 +22,10 @@ const Timeline = () => {
 						alt="Register Open"
 						width={250}
 						height={250}
+						style={{
+							maxWidth: "100%",
+							height: "auto",
+						}}
 					/>
 				</div>
 				<div className="relative col-span-1 w-full h-full flex justify-center items-center">
@@ -56,6 +60,10 @@ const Timeline = () => {
 						alt="Register Closed"
 						width={250}
 						height={200}
+						style={{
+							maxWidth: "100%",
+							height: "auto",
+						}}
 					/>
 				</div>
 
@@ -66,6 +74,10 @@ const Timeline = () => {
 						alt="IEEE Day Logo"
 						className="mx-auto"
 						width={250}
+						style={{
+							maxWidth: "100%",
+							height: "auto",
+						}}
 					/>
 				</div>
 				<div className="relative col-span-1 w-full h-full flex justify-center items-center">
