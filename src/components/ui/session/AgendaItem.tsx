@@ -20,7 +20,7 @@ const AgendaItem: React.FC<AgendaItemProps> = ({ phaseNumber, phaseTitle, time, 
       <div className="flex-1">
         {/* Title and Time in the same row */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
-          <h2 className="text-[28px] md:text-2xl font-sansation">{phaseTitle}</h2>
+          <h2 className="text-[26px] md:text-3xl font-sansation">{phaseTitle}</h2>
           <div className="text-[18px] font-medium mt-2 md:mt-0">{time}</div>
         </div>
 
