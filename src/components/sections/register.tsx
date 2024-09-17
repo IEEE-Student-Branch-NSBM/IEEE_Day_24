@@ -34,12 +34,12 @@ const BannerWithImages: React.FC = () => {
 
 				{/* Button */}
 				<Button
-						href="/register"
-						variant="shadow"
-						className="bg-white text-blue-900 px-4 py-2 rounded-md mt-10 font-semibold hover:bg-gray-200 shadow-md font-sansation"
-					>
-						REGISTER
-					</Button>
+					href="/register"
+					variant="shadow"
+					className="bg-white text-blue-900 px-4 py-2 rounded-md mt-10 font-semibold hover:bg-gray-200 shadow-md font-sansation"
+				>
+					REGISTER
+				</Button>
 			</div>
 		</div>
 	);
