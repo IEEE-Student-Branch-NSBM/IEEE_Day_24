@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import Countdown from "react-countdown";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import backdrop from "@/assets/background 2.png";
 import Innerlogo from "@/assets/innerlogo.png";
 import Outerlogo from "@/assets/Layer outter LOGO.png";
@@ -62,26 +62,31 @@ const CountdownComponent: React.FC = () => {
 	}
 
 	return (
-		<div className="relative w-full h-[48rem] flex flex-col text-white overflow-hidden">
+        <div className="relative w-full h-[48rem] flex flex-col text-white overflow-hidden">
 			<div className="absolute inset-0">
 				<Image
-					src={backdrop}
-					alt="Background"
-					layout="fill"
-					objectFit="cover"
-					className="hidden lg:block z-[-1]"
-				/>
+                    src={backdrop}
+                    alt="Background"
+                    className="hidden lg:block z-[-1]"
+                    fill
+                    sizes="100vw"
+                    style={{
+                        objectFit: "cover"
+                    }} />
 			</div>
 			<div className="relative w-full p-4 sm:p-8 lg:p-10">
 				<div className="flex mx-4 my-5 md:mx-24 justify-center">
 					<div className="w-3/4 flex flex-col md:flex-row gap-4 items-center">
 						<div className="flex flex-col items-center md:items-start">
 							<Image
-								src={IEEEday_logo}
-								alt="IEEE Day Logo"
-								width={120}
-								className="w-[80px] sm:w-[120px] lg:w-[150px] hidden lg:block z-[-1]"
-							/>
+                                src={IEEEday_logo}
+                                alt="IEEE Day Logo"
+                                width={120}
+                                className="w-[80px] sm:w-[120px] lg:w-[150px] hidden lg:block z-[-1]"
+                                style={{
+                                    maxWidth: "100%",
+                                    height: "auto"
+                                }} />
 						</div>
 						<div className="flex flex-col text-center md:text-left font-sansation text-shadow-sm ">
 							<h1 className="text-4xl sm:text-5xl lg:text-7xl ">IEEE DAY</h1>
@@ -94,21 +99,27 @@ const CountdownComponent: React.FC = () => {
 				<div className="flex justify-center items-center relative mx-4 md:mx-10 py-10 sm:py-0">
 					<div className="relative">
 						<Image
-							src={Outerlogo}
-							alt="Outer Logo"
-							width={800}
-							height={800}
-							className="w-[310px] sm:w-[500px] lg:w-[1150px] pb-1 animate-spin-slow"
-						/>
+                            src={Outerlogo}
+                            alt="Outer Logo"
+                            width={800}
+                            height={800}
+                            className="w-[310px] sm:w-[500px] lg:w-[1150px] pb-1 animate-spin-slow"
+                            style={{
+                                maxWidth: "100%",
+                                height: "auto"
+                            }} />
 					</div>
 					<div className="absolute flex justify-center items-center">
 						<div className="overflow-hidden opacity-85 sm:blur">
 							<Image
-								src={Innerlogo}
-								alt="Inner Logo"
-								width={140}
-								className="md:w-[250px] md:h-[250px] lg:w-[580px] lg:h-[580px]"
-							/>
+                                src={Innerlogo}
+                                alt="Inner Logo"
+                                width={140}
+                                className="md:w-[250px] md:h-[250px] lg:w-[580px] lg:h-[580px]"
+                                style={{
+                                    maxWidth: "100%",
+                                    height: "auto"
+                                }} />
 						</div>
 					</div>
 					<div className="absolute mt-[40rem] sm:mt-[-1rem] lg:mt-[-20rem] text-center font-sansation ">
@@ -118,7 +129,7 @@ const CountdownComponent: React.FC = () => {
 				</div>
 			</div>
 		</div>
-	);
+    );
 };
 
 export default CountdownComponent;

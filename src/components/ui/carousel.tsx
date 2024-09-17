@@ -3,7 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Card, CardBody } from "@nextui-org/react";
-import Image, { StaticImageData } from "next/legacy/image";
+import Image, { StaticImageData } from "next/image";
 import image1 from "@/assets/image-1.jpg";
 import image2 from "@/assets/image-2.jpg";
 import image3 from "@/assets/image-3.jpg";
@@ -85,7 +85,7 @@ const Carousel: React.FC = () => {
 	];
 
 	return (
-		<Swiper
+        <Swiper
 			modules={[Navigation, Pagination, Autoplay]}
 			spaceBetween={10}
 			slidesPerView={3}
@@ -114,18 +114,20 @@ const Carousel: React.FC = () => {
 					<Card>
 						<CardBody className="aspect-[3/2] relative overflow-hidden">
 							<Image
-								src={slide.image}
-								alt={slide.name}
-								objectFit="cover"
-								layout="fill"
-								className="translate-transaform duration-300 hover:scale-105"
-							/>
+                                src={slide.image}
+                                alt={slide.name}
+                                className="translate-transaform duration-300 hover:scale-105"
+                                fill
+                                sizes="100vw"
+                                style={{
+                                    objectFit: "cover"
+                                }} />
 						</CardBody>
 					</Card>
 				</SwiperSlide>
 			))}
 		</Swiper>
-	);
+    );
 };
 
 export default Carousel;
