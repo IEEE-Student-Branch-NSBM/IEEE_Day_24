@@ -3,10 +3,10 @@ import Image from "next/image";
 import Outerlogo from "@/assets/Layer outter LOGO.png";
 import { Button } from "@nextui-org/button";
 
-const BannerWithImages: React.FC = () => {
+const Register: React.FC = () => {
 	return (
-		<div className="relative bg-[#010b13] flex items-center justify-center h-[25rem] lg:h-[35rem] overflow-hidden">
-			{/* Background Image */}
+		<div className="relative bg-[#010b13] hidden items-center justify-center h-[25rem] lg:h-[35rem] overflow-hidden">
+			
 			<div className="absolute inset-0 flex items-center justify-center">
 				<Image
 					src={Outerlogo}
@@ -22,8 +22,8 @@ const BannerWithImages: React.FC = () => {
 			</div>
 
 			{/* Centered Text */}
-			<div className="relative z-10 text-center text-white">
-				<h1 className="text-4xl md:text-6xl font-bold uppercase tracking-wider font-sansation">
+			<div className="relative z-10 text-center text-white sm:max-w-[450px] mt-2 lg:max-w-[600px]">
+				<h1 className="text-4xl lg:text-6xl font-bold uppercase tracking-wider font-sansation">
 					Register now
 				</h1>
 				<p className="text-sm md:text-lg mt-5 font-sansation">
@@ -45,4 +45,4 @@ const BannerWithImages: React.FC = () => {
 	);
 };
 
-export default BannerWithImages;
+export default Register;
