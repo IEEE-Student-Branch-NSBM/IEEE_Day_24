@@ -90,8 +90,8 @@ const Carousel: React.FC = () => {
 			spaceBetween={10}
 			slidesPerView={3}
 			navigation={false}
-			pagination={{ clickable: true  }}
-			parallax = {true}
+			pagination={{ clickable: true }}
+			parallax={true}
 			autoplay={{ delay: 3000 }}
 			loop
 			className="container mx-auto my-10 max-w-[390px] sm:max-w-[790px] lg:max-w-[1200px]"
