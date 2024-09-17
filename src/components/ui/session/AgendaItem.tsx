@@ -21,6 +21,7 @@ const AgendaItem: React.FC<AgendaItemProps> = ({
                     <div className="text-4xl font-sansation">{phaseNumber}</div>
                     <div className="text-sm text-gray-400 md:block hidden">phase</div>
                 </div>
+                
                 <h2 className="text-[30px] md:text-3xl font-sansation md:hidden">
                     {phaseTitle}
                 </h2>
@@ -30,7 +31,8 @@ const AgendaItem: React.FC<AgendaItemProps> = ({
             <div className="flex-1">
                 {/* Title and Time in the same row */}
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
-                    <h2 className="text-[26px] md:text-3xl font-sansation">
+                    {/* title */}
+                    <h2 className="text-[26px] md:text-3xl font-sansation hidden md:block">
                         {phaseTitle}
                     </h2>
                     <div className="text-[18px] font-medium mt-2 md:mt-0">{time}</div>
