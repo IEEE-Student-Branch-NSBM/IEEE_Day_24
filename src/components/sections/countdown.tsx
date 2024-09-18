@@ -63,12 +63,12 @@ const CountdownComponent: React.FC = () => {
 	}
 
 	return (
-		<div className="sticky w-full lg:h-[41rem] md:h-[37rem] xl:h-[44rem] 2xl:h-[55rem] h-[45rem] flex flex-col text-white overflow-hidden ">
+		<div className="sticky md:mt-16 lg:mt-[4.3rem] mt-20 w-full lg:h-[41rem] md:h-[37rem] xl:h-[44rem] 2xl:h-[55rem] h-[45rem] flex flex-col text-white overflow-hidden ">
 			<div className="absolute inset-0 ">
 				<Image
 					src={backdrop}
 					alt="Background"
-					className="bottom-0 -z-10 hidden aspect-[9/16] md:block"
+					className="bottom-0 blur-sm -z-10 hidden aspect-[9/16] md:block"
 					layout="fill"
 					objectFit="cover"
 				/>
@@ -102,11 +102,11 @@ const CountdownComponent: React.FC = () => {
 							alt="Outer Logo"
 							width={1500}
 							height={1500}
-							className="w-[310px] md:w-[900px] lg:w-[800px] xl:w-[990px] 2xl:w-[1350px]  "
+							className="w-[310px] md:w-[900px] xl:w-[900px] 2xl:w-[1300px]  "
 						/>
 					</div>
 					<div className="absolute flex justify-center items-center">
-						<div className="overflow-hidden hidden sm:block md:blur">
+						<div className="overflow-hidden hidden sm:mix-blend-hard-light sm:block sm:blur-md">
 							<Image
 								src={Innerlogo}
 								alt="Inner Logo"
@@ -114,7 +114,7 @@ const CountdownComponent: React.FC = () => {
 								className="w-[140] md:w-[370px] md:h-[370px] lg:w-[420px] lg:h-[420px] xl:w-[530px] xl:h-[530px] 2xl:w-[700px] 2xl:h-[700px] "
 							/>
 						</div>
-						<div className="overflow-hidden sm:hidden sm:opacity-25 md:blur">
+						<div className="overflow-hidden sm:hidden">
 							<Image
 								src={innerlogolight}
 								alt="Inner Logo light"
@@ -123,8 +123,8 @@ const CountdownComponent: React.FC = () => {
 							/>
 						</div>
 					</div>
-					<div className="absolute mt-[35rem] md:mt-[-10rem] lg:mt-[-13rem] xl:mb-[5rem] 2xl:mb-[7rem] text-center font-sansation ">
-						<h2 className="text-xl sm:text-2xl lg:mb-[-0.5rem] lg:text-4xl">
+					<div className="absolute mt-[35rem] md:mt-[-11rem] lg:mt-[-12rem] 2xl:mb-[4.5rem] text-center font-sansation ">
+						<h2 className="text-xl sm:text-2xl tracking-widest font-semibold lg:mb-[-0.7rem] md:mb-[-1rem] lg:text-4xl">
 							COMING SOON IN
 						</h2>
 						<Countdown date={ieeeDay} renderer={renderer} />

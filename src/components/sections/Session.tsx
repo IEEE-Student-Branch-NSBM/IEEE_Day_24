@@ -42,14 +42,14 @@ const Session: React.FC = () => {
 	];
 
 	return (
-		<div className="container sticky max-w-5xl mx-auto w-full px-4 md:mt-5 py-8">
+		<div className="container sticky max-w-5xl mx-auto w-full px-4 mt-5">
 			{/* Title */}
-			<h1 className="font-sansation text-center font-semibold tracking-widest text-3xl md:text-6xl md:py-10 ">
+			<h1 className="font-sansation text-center font-semibold tracking-widest text-4xl md:text-6xl pt-10 ">
 				SESSIONS
 			</h1>
 
 			{/* Agenda Items */}
-			<div className="p-6 mt-5">
+			<div className="px-6">
 				{agendaItems.map((item, index) => (
 					<AgendaItem
 						key={index}

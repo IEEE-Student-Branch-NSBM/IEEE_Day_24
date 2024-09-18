@@ -3,7 +3,7 @@ import { Card, CardHeader, CardBody } from "@nextui-org/card";
 import Carousel from "../ui/carousel";
 const Contextsection = () => {
 	return (
-		<div className="container mx-auto sticky lg:mt-10 max-w-[1350px]">
+		<div className="container mx-auto sticky mt-10 max-w-[1350px]">
 			<div className="grid grid-cols-1 sm:grid-cols-2 justify-items-center">
 				<Card className="bg-[#0a406c] p-6 mx-6 mt-5 rounded-lg xl:max-w-[450px]">
 					<CardHeader>

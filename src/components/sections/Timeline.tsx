@@ -9,7 +9,7 @@ import TimelineTextContent from "@/components/ui/TimelineTextContent";
 const Timeline = () => {
 	return (
 		<div className="sticky">
-			<h1 className="text-center font-sansation font-semibold text-3xl tracking-widest md:text-6xl md:py-32 py-20">
+			<h1 className="text-center font-sansation font-semibold text-4xl tracking-widest md:text-6xl py-20 md:">
 				TIMELINE
 			</h1>
 
