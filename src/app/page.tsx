@@ -12,9 +12,9 @@ export default function Home() {
 			<Countdown />
 			<Contextsection />
 			<Timeline />
-			<Session/>
-			<RegisterSoon/>
-			<Register/>
+			<Session />
+			<RegisterSoon />
+			<Register />
 		</div>
 	);
 }

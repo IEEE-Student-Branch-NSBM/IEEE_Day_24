@@ -115,7 +115,9 @@ const CountdownComponent: React.FC = () => {
 						</div>
 					</div>
 					<div className="absolute mt-[35rem] md:mt-[-10rem] lg:mt-[-13rem] xl:mb-[5rem] 2xl:mb-[7rem] text-center font-sansation ">
-						<h2 className="text-xl sm:text-2xl lg:text-2xl xl:text-3xl">COMING SOON IN</h2>
+						<h2 className="text-xl sm:text-2xl lg:text-2xl xl:text-3xl">
+							COMING SOON IN
+						</h2>
 						<Countdown date={ieeeDay} renderer={renderer} />
 					</div>
 				</div>
