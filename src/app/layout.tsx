@@ -37,8 +37,8 @@ export default function RootLayout({
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
 				<div className="mix-blend-screen">
-				<ParticlesContainer/>
-				</div>	
+					<ParticlesContainer />
+				</div>
 				<Navbar />
 				{children}
 				<Footer />

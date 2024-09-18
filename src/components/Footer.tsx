@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
 			<div className="py-5 container max-w-7xl mx-auto w-full pt-10 px-4">
 				{/* Three logos in a row, responsive layout */}
 				<div className="flex flex-col md:flex-row w-full justify-between items-center space-y-6 md:space-y-0">
-				<div className="flex items-center justify-center">
+					<div className="flex items-center justify-center">
 						<Image
 							src={IEEBarImage}
 							alt="IEEE Bar Logo"
