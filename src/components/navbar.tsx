@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
 				<div className="flex items-center space-x-4">
 					<Image
 						src={logo}
-						width={300}
+						width={250}
 						height={200}
 						alt="NSBM Logo"
 						className="  mb-2 ml-15 mt-2"
@@ -22,8 +22,7 @@ const Navbar: React.FC = () => {
 						href="/register"
 						variant="shadow"
 						color="primary"
-						className=" bg-white  text-blue-900 px-4 py-2 rounded-md font-semibold  hover:bg-gray-200 transition shadow-md hover:shadow-lg text-sm md:text-base 
-    md:px-6 md:py-3 
+						className=" bg-white  text-blue-900 px-4 py-2 rounded-md font-semibold  hover:bg-gray-200 transition shadow-md hover:shadow-lg text-sm md:text-base md:px-6 md:py-3 
     w-full sm:w-auto"
 					>
 						REGISTER
