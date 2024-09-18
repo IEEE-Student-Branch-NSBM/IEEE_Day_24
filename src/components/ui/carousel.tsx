@@ -93,9 +93,9 @@ const Carousel: React.FC = () => {
 			pagination={{ clickable: true }}
 			autoplay={{ delay: 3000 }}
 			loop
-			className="container mx-auto my-10 max-w-[390px] sm:max-w-[790px] lg:max-w-[1200px]"
+			className="container mx-auto my-10 max-w-[390px] sm:max-w-[790px] lg:max-w-[1300px]"
 			breakpoints={{
-				410: {
+				300: {
 					slidesPerView: 1,
 					spaceBetween: 10,
 				},

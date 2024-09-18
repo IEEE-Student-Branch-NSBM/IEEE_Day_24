@@ -4,7 +4,7 @@ import Outerlogo from "@/assets/Layer outter LOGO.png";
 
 const RegisterSoon: React.FC = () => {
 	return (
-		<div className="relative bg-[#010b13] flex items-center justify-center h-[25rem] lg:h-[35rem] overflow-hidden">
+		<div className="relative flex items-center justify-center h-[25rem] lg:h-[35rem] overflow-hidden">
 			{/* Background Image */}
 			<div className="absolute inset-0 flex items-center justify-center">
 				<Image

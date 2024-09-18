@@ -1,5 +1,4 @@
 import Contextsection from "@/components/sections/context-section";
-import React from "react";
 import Countdown from "@/components/sections/countdown";
 import Timeline from "@/components/sections/Timeline";
 import Session from "@/components/sections/Session";

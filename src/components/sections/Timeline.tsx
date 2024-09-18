@@ -4,12 +4,12 @@ import Image from "next/image";
 import RegOpen from "@/assets/reg-open.svg";
 import RegClose from "@/assets/reg-close.svg";
 import EventDay from "@/assets/event-day.svg";
-import TimelineTextContent from "@/components/ui/timeline/TimelineTextContent";
+import TimelineTextContent from "@/components/ui/TimelineTextContent";
 
 const Timeline = () => {
 	return (
-		<>
-			<h1 className="font-sansation text-center text-3xl md:text-4xl md:py-20 py-20">
+		<div className="sticky">
+			<h1 className="text-center font-sansation font-semibold text-3xl tracking-widest md:text-6xl md:py-32 py-20">
 				TIMELINE
 			</h1>
 
@@ -91,7 +91,7 @@ const Timeline = () => {
 					/>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 
