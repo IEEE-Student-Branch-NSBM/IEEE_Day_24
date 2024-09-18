@@ -13,84 +13,86 @@ import YoutubeIcon from "@/assets/footer-social/YouTube.svg";
 const Footer: React.FC = () => {
 	return (
 		<div className="bg-[#002E53]">
-			<div className="py-5 container max-w-7xl mx-auto w-full pt-10">
-				{/* three logo in row in space between*/}
-				<div className="flex flex-row w-full justify-between">
+			<div className="py-5 container max-w-7xl mx-auto w-full pt-10 px-4">
+				{/* Three logos in a row, responsive layout */}
+				<div className="flex flex-col md:flex-row w-full justify-between items-center space-y-6 md:space-y-0">
 					<div className="flex items-center justify-center">
-						<Image src={WIEImage} alt="WIE Logo" className="h-auto w-[250px]" />
+						<Image
+							src={WIEImage}
+							alt="WIE Logo"
+							className="h-auto w-[200px] md:w-[250px]"
+						/>
 					</div>
 					<div className="flex items-center justify-center">
 						<Image
 							src={IEECSLogo}
-							alt="WIE Logo"
-							className="h-auto w-[150px]"
+							alt="IEEE CS Logo"
+							className="h-auto w-[120px] md:w-[150px]"
 						/>
 					</div>
-
 					<div className="flex items-center justify-center">
 						<Image
 							src={IEEBarImage}
-							alt="WIE Logo"
-							className="h-auto w-[250px]"
+							alt="IEEE Bar Logo"
+							className="h-auto w-[200px] md:w-[250px]"
 						/>
 					</div>
 				</div>
 
-				{/* devider */}
+				{/* Divider */}
 				<div className="w-full h-[1.5px] bg-white my-5 rounded-full"></div>
 
-				{/* title , description + logo */}
-				<div className="flex flex-row justify-between">
-					<div className="flex flex-col justify-center">
-						<h1 className="text-white text-3xl mb-2 font-sansation">
+				{/* Title, description + logo, responsive layout */}
+				<div className="flex flex-col md:flex-row justify-between items-center">
+					<div className="flex flex-col justify-center md:w-7/12">
+						<h1 className="text-white text-2xl md:text-3xl mb-2 font-sansation">
 							Ready to get started?
 						</h1>
-						<p className="text-white w-5/12">
+						<p className="text-white md:w-10/12">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-							enim ad minim veniam, quis nostrud exercitation
+							enim ad minim veniam, quis nostrud exercitation.
 						</p>
 					</div>
-					<div className="items-center justify-center md:block hidden">
+					<div className="mt-4 md:mt-0 items-center justify-center hidden md:flex">
 						<Image
 							src={IEEDAYLogo}
-							alt="WIE Logo"
-							className="h-auto w-[200px]"
+							alt="IEEE Day Logo"
+							className="h-auto w-[150px] md:w-[150px]"
 						/>
 					</div>
 				</div>
 
-				{/* social icons */}
-				<div className="flex flex-row w-full justify-center gap-4 mb-2">
+				{/* Social icons */}
+				<div className="flex flex-row w-full justify-center gap-6 py-2">
 					<div className="flex items-center justify-center">
 						<Image
 							src={YoutubeIcon}
-							alt="WIE Logo"
+							alt="YouTube Logo"
 							className="h-auto w-[30px]"
 						/>
 					</div>
 					<div className="flex items-center justify-center">
 						<Image
 							src={LinkedinIcon}
-							alt="WIE Logo"
+							alt="LinkedIn Logo"
 							className="h-auto w-[30px]"
 						/>
 					</div>
-
 					<div className="flex items-center justify-center">
 						<Image
 							src={FacebookIcon}
-							alt="WIE Logo"
+							alt="Facebook Logo"
 							className="h-auto w-[30px]"
 						/>
 					</div>
 				</div>
 
-				{/* copyright */}
+				{/* Copyright */}
 				<div className="flex flex-row justify-center py-3">
-					<p className="text-white">
+					<p className="text-white text-center">
 						Powered by{" "}
-						<span className="font-semibold">IEEE Computer Society</span>{" "}
+						<span className="font-semibold">IEEE Computer Society</span>
 					</p>
 				</div>
 			</div>
