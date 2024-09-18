@@ -5,6 +5,7 @@ import Countdown from "react-countdown";
 import Image from "next/image";
 import backdrop from "@/assets/background 2.png";
 import Innerlogo from "@/assets/innerlogo.png";
+import innerlogolight from "@/assets/inner-logo-light.png";
 import Outerlogo from "@/assets/Layer outter LOGO.png";
 import IEEEday_logo from "@/assets/IEEEDAYLOGO.png";
 import CountdownItem from "../ui/count";
@@ -38,7 +39,7 @@ const CountdownComponent: React.FC = () => {
 	}) => {
 		if (completed) {
 			return (
-				<div className="flex justify-center items-center space-x-4">
+				<div className="flex justify-center items-center space-x-4 sm:scale-[65%] md:scale-90">
 					<CountdownItem value={"00"} label="DAYS" />
 					<CountdownItem value={"00"} label="HRS" />
 					<CountdownItem value={"00"} label="MIN" />
@@ -47,7 +48,7 @@ const CountdownComponent: React.FC = () => {
 			);
 		} else {
 			return (
-				<div className="flex justify-center items-center space-x-4">
+				<div className="flex justify-center items-center space-x-4 sm:scale-[65%] md:scale-90">
 					<CountdownItem value={formatTime(days).toString()} label="DAYS" />
 					<CountdownItem value={formatTime(hours).toString()} label="HRS" />
 					<CountdownItem value={formatTime(minutes).toString()} label="MIN" />
@@ -62,12 +63,12 @@ const CountdownComponent: React.FC = () => {
 	}
 
 	return (
-		<div className="relative w-full lg:h-[41rem] md:h-[37rem] xl:h-[44rem] 2xl:h-[55rem] h-[45rem] flex flex-col text-white overflow-hidden ">
+		<div className="sticky md:mt-16 lg:mt-[4.3rem] mt-20 w-full lg:h-[41rem] md:h-[37rem] xl:h-[44rem] 2xl:h-[55rem] h-[45rem] flex flex-col text-white overflow-hidden ">
 			<div className="absolute inset-0 ">
 				<Image
 					src={backdrop}
 					alt="Background"
-					className="bottom-0 -z-10 hidden aspect-[9/16] md:block"
+					className="bottom-0 blur-sm -z-10 hidden aspect-[9/16] md:block"
 					layout="fill"
 					objectFit="cover"
 				/>
@@ -84,8 +85,8 @@ const CountdownComponent: React.FC = () => {
 								className="w-[80px] sm:w-[130px] lg:w-[150px] hidden md:block z-[-1]"
 							/>
 						</div>
-						<div className="flex flex-col text-center  lg:text-left font-sansation text-shadow-sm ">
-							<h1 className="text-4xl md:text-4xl lg:text-6xl xl:text-8xl tracking-wider">
+						<div className="flex flex-col text-center  lg:text-left font-sansation font-medium text-shadow-sm ">
+							<h1 className="text-4xl lg:text-6xl xl:text-8xl tracking-wider">
 								IEEE DAY
 							</h1>
 							<h2 className="text-2xl sm:text-3xl lg:text-6xl tracking-[1rem]">
@@ -101,11 +102,11 @@ const CountdownComponent: React.FC = () => {
 							alt="Outer Logo"
 							width={1500}
 							height={1500}
-							className="w-[310px] md:w-[900px] lg:w-[800px] xl:w-[990px] 2xl:w-[1350px]  "
+							className="w-[310px] md:w-[900px] xl:w-[900px] 2xl:w-[1300px]  "
 						/>
 					</div>
 					<div className="absolute flex justify-center items-center">
-						<div className="overflow-hidden opacity-85 md:blur">
+						<div className="overflow-hidden hidden sm:mix-blend-hard-light sm:block sm:blur-md">
 							<Image
 								src={Innerlogo}
 								alt="Inner Logo"
@@ -113,9 +114,19 @@ const CountdownComponent: React.FC = () => {
 								className="w-[140] md:w-[370px] md:h-[370px] lg:w-[420px] lg:h-[420px] xl:w-[530px] xl:h-[530px] 2xl:w-[700px] 2xl:h-[700px] "
 							/>
 						</div>
+						<div className="overflow-hidden sm:hidden">
+							<Image
+								src={innerlogolight}
+								alt="Inner Logo light"
+								width={140}
+								className="w-[140] md:w-[370px] md:h-[370px] lg:w-[420px] lg:h-[420px] xl:w-[530px] xl:h-[530px] 2xl:w-[700px] 2xl:h-[700px] "
+							/>
+						</div>
 					</div>
-					<div className="absolute mt-[35rem] md:mt-[-10rem] lg:mt-[-13rem] xl:mb-[5rem] 2xl:mb-[7rem] text-center font-sansation ">
-						<h2 className="text-xl sm:text-2xl lg:text-2xl xl:text-3xl">COMING SOON IN</h2>
+					<div className="absolute mt-[35rem] md:mt-[-11rem] lg:mt-[-12rem] 2xl:mb-[4.5rem] text-center font-sansation ">
+						<h2 className="text-xl sm:text-2xl tracking-widest font-semibold lg:mb-[-0.7rem] md:mb-[-1rem] lg:text-4xl">
+							COMING SOON IN
+						</h2>
 						<Countdown date={ieeeDay} renderer={renderer} />
 					</div>
 				</div>

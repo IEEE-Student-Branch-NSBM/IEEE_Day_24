@@ -5,7 +5,7 @@ import { Button } from "@nextui-org/button";
 
 const Register: React.FC = () => {
 	return (
-		<div className="relative bg-[#010b13] hidden items-center justify-center h-[25rem] lg:h-[35rem] overflow-hidden">
+		<div className="relative hidden items-center justify-center h-[25rem] lg:h-[35rem] overflow-hidden">
 			<div className="absolute inset-0 flex items-center justify-center">
 				<Image
 					src={Outerlogo}

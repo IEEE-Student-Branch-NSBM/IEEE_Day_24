@@ -12,14 +12,14 @@ import YoutubeIcon from "@/assets/footer-social/YouTube.svg";
 
 const Footer: React.FC = () => {
 	return (
-		<div className="bg-[#002E53]">
+		<div className="bg-[#002E53] sticky">
 			<div className="py-5 container max-w-7xl mx-auto w-full pt-10 px-4">
 				{/* Three logos in a row, responsive layout */}
 				<div className="flex flex-col md:flex-row w-full justify-between items-center space-y-6 md:space-y-0">
 					<div className="flex items-center justify-center">
 						<Image
-							src={WIEImage}
-							alt="WIE Logo"
+							src={IEEBarImage}
+							alt="IEEE Bar Logo"
 							className="h-auto w-[200px] md:w-[250px]"
 						/>
 					</div>
@@ -32,8 +32,8 @@ const Footer: React.FC = () => {
 					</div>
 					<div className="flex items-center justify-center">
 						<Image
-							src={IEEBarImage}
-							alt="IEEE Bar Logo"
+							src={WIEImage}
+							alt="WIE Logo"
 							className="h-auto w-[200px] md:w-[250px]"
 						/>
 					</div>
