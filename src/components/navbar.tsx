@@ -6,7 +6,7 @@ import { Button } from "@nextui-org/button";
 const Navbar: React.FC = () => {
 	return (
 		<nav className=" bg-[#002E53] fixed z-50 inset-x-0 top-0 shadow-lg py-2 flex-wrap">
-			<div className="container mx-auto grid grid-cols-2 gap-x-48 sm:max-w-[700px] sm:gap-x-[490px] lg:max-w-[1024px] lg:gap-x-[800px] xl:max-w-[1500px] xl:gap-x-[1250px]">
+			<div className="container mx-auto grid grid-cols-2 gap-x-48 sm:max-w-[800px] sm:gap-x-[550px] lg:max-w-[970px] lg:gap-x-[750px] xl:max-w-[1150px] xl:gap-x-[950px] 2xl:max-w-[1500px] 2xl:gap-x-[1250px]">
 				<div className=" ms-1 sm:ms-[-2rem]">
 					<Image
 						src={logo}
