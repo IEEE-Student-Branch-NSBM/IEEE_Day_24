@@ -9,11 +9,18 @@ const Navbar: React.FC = () => {
 	const { registerRef } = useScroll();
 
 	const handleScroll = () => {
-		registerRef.current?.scrollIntoView({ behavior: "smooth" });
+		if (registerRef.current) {
+			const offset = 115;
+			const top = registerRef.current.getBoundingClientRect().top + window.scrollY-offset;
+			window.scrollTo({
+			  top,
+			  behavior: 'smooth',
+			});
+		  }
 	};
 	return (
 		<div>
-			<nav className="bg-[#002E53] fixed z-50 inset-x-0 top-0 shadow-lg py-2 flex-wrap">
+			<nav className=" bg-primary fixed z-50 inset-x-0 top-0 shadow-lg py-2 flex-wrap">
 				<div className="container mx-auto grid grid-cols-2 gap-x-48 md:max-w-[670px] md:gap-x-[460px] lg:max-w-[870px] lg:gap-x-[600px] xl:max-w-[1150px] xl:gap-x-[950px] 2xl:max-w-[1500px] 2xl:gap-x-[1250px]">
 					<div className=" ms-1 sm:ms-[-2rem]">
 						<Image

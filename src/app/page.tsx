@@ -30,8 +30,8 @@ export default function Home() {
 			</Wrapper>
 			<ScrollAnimation>
 				<RegisterSoon />
+				<Register />
 			</ScrollAnimation>
-			<Register />
 		</div>
 	);
 }

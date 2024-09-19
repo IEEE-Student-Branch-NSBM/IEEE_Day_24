@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import WIEImage from "@/assets/WIE Logo Bar - White Redused 2.png";
-import IEEBarImage from "@/assets/IEEE_logo_bar.png";
-import IEECSLogo from "@/assets/IEEE NSBM CS LOGO REBUILD - WHITE 1.png";
+import IEEBarImage from "@/assets/sb-logo.png";
+import IEECSLogo from "@/assets/cs-logo.png";
 import IEEDAYLogo from "@/assets/IEEEDAYLOGO.png";
 
 // social icons
@@ -10,7 +10,7 @@ import { FaFacebook, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const Footer: React.FC = () => {
 	return (
-		<div className="bg-[#002E53] sticky">
+		<div className="bg-primary sticky">
 			<div className="py-5 container max-w-7xl mx-auto w-full pt-10 px-4">
 				{/* Three logos in a row, responsive layout */}
 				<div className="flex flex-col md:flex-row w-full justify-between items-center space-y-6 md:space-y-0">
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
 						<Image
 							src={IEECSLogo}
 							alt="IEEE CS Logo"
-							className="h-auto w-[130px] md:h-[50px]"
+							className="h-auto w-[100px]"
 						/>
 					</div>
 					<div className="flex items-center justify-center">
