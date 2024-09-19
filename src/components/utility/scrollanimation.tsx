@@ -8,7 +8,7 @@ interface props {
     children: React.ReactNode;
   }
 
-const scrollanimation: React.FC<props> = ({ children }) => {
+const Scrollanimation: React.FC<props> = ({ children }) => {
   const [ref, inView] = useInView({ threshold: 0.2 });
 
   return (
@@ -24,4 +24,4 @@ const scrollanimation: React.FC<props> = ({ children }) => {
   );
 };
 
-export default scrollanimation;
+export default Scrollanimation;
