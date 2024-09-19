@@ -29,7 +29,7 @@ const RegisterSoon: React.FC = () => {
 			<div className="relative z-10 text-center text-white sm:max-w-[450px] mt-2 lg:max-w-[600px]">
 				<h1 className="text-2xl md:text-3xl lg:text-5xl font-bold uppercase tracking-wider font-sansation">
 					Registrations
-					<br/>
+					<br />
 					Opening
 					<br />
 					Soon!

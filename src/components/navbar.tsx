@@ -11,12 +11,15 @@ const Navbar: React.FC = () => {
 	const handleScroll = () => {
 		if (registerRef.current) {
 			const offset = 115;
-			const top = registerRef.current.getBoundingClientRect().top + window.scrollY-offset;
+			const top =
+				registerRef.current.getBoundingClientRect().top +
+				window.scrollY -
+				offset;
 			window.scrollTo({
-			  top,
-			  behavior: 'smooth',
+				top,
+				behavior: "smooth",
 			});
-		  }
+		}
 	};
 	return (
 		<div>
