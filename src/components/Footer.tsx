@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
 						<Image
 							src={IEECSLogo}
 							alt="IEEE CS Logo"
-							className="h-auto w-[100px]"
+							className="h-auto w-[110px]"
 						/>
 					</div>
 					<div className="flex items-center justify-center">
