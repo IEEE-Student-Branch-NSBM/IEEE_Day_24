@@ -4,11 +4,13 @@ import React from "react";
 import Countdown from "react-countdown";
 import Image from "next/image";
 import backdrop from "@/assets/background 2.png";
+import Mobilebackdrop from "@/assets/background-mobile.png"
 import Innerlogo from "@/assets/innerlogo.png";
 import innerlogolight from "@/assets/inner-logo-light.png";
 import Outerlogo from "@/assets/Layer outter LOGO.png";
 import IEEEday_logo from "@/assets/IEEEDAYLOGO.png";
 import CountdownItem from "../ui/count";
+
 
 function formatTime(time: number) {
 	if (time < 0) return "00";
@@ -63,12 +65,19 @@ const CountdownComponent: React.FC = () => {
 	}
 
 	return (
-		<div className="sticky md:mt-16  mt-20 w-full lg:h-[41rem] md:h-[37rem] xl:h-[44rem] 2xl:h-[56rem] h-[45rem] flex flex-col text-white overflow-hidden ">
+		<div className="sticky md:mt-16 pt-24 sm:pt-0  w-full lg:h-[41rem] md:h-[37rem] xl:h-[44rem] 2xl:h-[56rem] h-[60rem] flex flex-col text-white overflow-hidden ">
 			<div className="absolute inset-0 ">
 				<Image
 					src={backdrop}
 					alt="Background"
 					className="bottom-0 blur-sm -z-10 hidden aspect-[9/16] md:block"
+					layout="fill"
+					objectFit="cover"
+				/>
+				<Image
+					src={Mobilebackdrop}
+					alt="Mobile Background"
+					className="bottom-0 blur-sm -z-10  aspect-[16/9] md:hidden"
 					layout="fill"
 					objectFit="cover"
 				/>
@@ -95,7 +104,7 @@ const CountdownComponent: React.FC = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex justify-center items-center relative mx-4 md:mt-8 py-10 lg:mt-10 xl:mt-0">
+				<div className="flex justify-center items-center relative mx-4 mt-2 md:mt-8 py-10 lg:mt-10 xl:mt-0">
 					<div className="relative pb-1 drop-shadow-[0_-8px_3px_rgba(0,0,0,0.5)] animate-spin-slow">
 						<Image
 							src={Outerlogo}
@@ -111,7 +120,7 @@ const CountdownComponent: React.FC = () => {
 								src={Innerlogo}
 								alt="Inner Logo"
 								width={140}
-								className="w-[140] md:w-[370px] md:h-[370px] lg:w-[420px] lg:h-[420px] xl:w-[530px] xl:h-[530px] 2xl:w-[700px] 2xl:h-[700px] "
+								className="w-[140] md:w-[420px] md:h-[420px] lg:w-[420px] lg:h-[420px] xl:w-[530px] xl:h-[530px] 2xl:w-[700px] 2xl:h-[700px] "
 							/>
 						</div>
 						<div className="overflow-hidden sm:hidden">
