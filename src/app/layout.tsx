@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
 import { ParticlesContainer } from "@/components/ui/particle";
+import { ScrollProvider } from "@/components/utility/scroll-context";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -39,9 +40,11 @@ export default function RootLayout({
 				<div className="mix-blend-screen">
 					<ParticlesContainer />
 				</div>
-				<Navbar />
-				{children}
-				<Footer />
+				<ScrollProvider>
+					<Navbar />
+					<main>{children}</main>
+					<Footer />
+				</ScrollProvider>
 			</body>
 		</html>
 	);
