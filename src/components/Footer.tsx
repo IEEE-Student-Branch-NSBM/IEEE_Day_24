@@ -6,9 +6,7 @@ import IEECSLogo from "@/assets/IEEE NSBM CS LOGO REBUILD - WHITE 1.png";
 import IEEDAYLogo from "@/assets/IEEEDAYLOGO.png";
 
 // social icons
-import FacebookIcon from "@/assets/footer-social/Facebook.svg";
-import LinkedinIcon from "@/assets/footer-social/linkedin.svg";
-import YoutubeIcon from "@/assets/footer-social/YouTube.svg";
+import { FaFacebook, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const Footer: React.FC = () => {
 	return (
@@ -65,26 +63,35 @@ const Footer: React.FC = () => {
 
 				{/* Social icons */}
 				<div className="flex flex-row w-full justify-center gap-6 py-2">
+					{/* YouTube Icon */}
 					<div className="flex items-center justify-center">
-						<Image
-							src={YoutubeIcon}
-							alt="YouTube Logo"
-							className="h-auto w-[30px]"
-						/>
+						<a
+							href="https://www.youtube.com/@ieeensbm"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<FaYoutube size={29} />
+						</a>
 					</div>
+					{/* LinkedIn Icon */}
 					<div className="flex items-center justify-center">
-						<Image
-							src={LinkedinIcon}
-							alt="LinkedIn Logo"
-							className="h-auto w-[30px]"
-						/>
+						<a
+							href="https://www.linkedin.com/company/ieeesbnsbm/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<FaLinkedinIn size={26} />
+						</a>
 					</div>
+					{/* Facebook Icon */}
 					<div className="flex items-center justify-center">
-						<Image
-							src={FacebookIcon}
-							alt="Facebook Logo"
-							className="h-auto w-[30px]"
-						/>
+						<a
+							href="https://www.facebook.com/ieeensbm"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<FaFacebook size={26} />
+						</a>
 					</div>
 				</div>
 
