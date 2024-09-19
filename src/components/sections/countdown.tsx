@@ -63,7 +63,7 @@ const CountdownComponent: React.FC = () => {
 	}
 
 	return (
-		<div className="sticky md:mt-16 lg:mt-[4.3rem] mt-20 w-full lg:h-[41rem] md:h-[37rem] xl:h-[44rem] 2xl:h-[55rem] h-[45rem] flex flex-col text-white overflow-hidden ">
+		<div className="sticky md:mt-16  mt-20 w-full lg:h-[41rem] md:h-[37rem] xl:h-[44rem] 2xl:h-[56rem] h-[45rem] flex flex-col text-white overflow-hidden ">
 			<div className="absolute inset-0 ">
 				<Image
 					src={backdrop}
@@ -102,7 +102,7 @@ const CountdownComponent: React.FC = () => {
 							alt="Outer Logo"
 							width={1500}
 							height={1500}
-							className="w-[310px] md:w-[900px] xl:w-[900px] 2xl:w-[1300px]  "
+							className="w-[310px] md:w-[900px] lg:w-[850px] xl:w-[980px] 2xl:w-[1350px]  "
 						/>
 					</div>
 					<div className="absolute flex justify-center items-center">
@@ -123,8 +123,8 @@ const CountdownComponent: React.FC = () => {
 							/>
 						</div>
 					</div>
-					<div className="absolute mt-[35rem] md:mt-[-11rem] lg:mt-[-12rem] 2xl:mb-[4.5rem] text-center font-sansation ">
-						<h2 className="text-xl sm:text-2xl tracking-widest font-semibold lg:mb-[-0.7rem] md:mb-[-1rem] lg:text-4xl">
+					<div className="absolute mt-[35rem] md:mt-[-11rem] lg:mt-[-13rem] xl:mb-[2rem] 2xl:mb-[4.5rem] text-center font-sansation ">
+						<h2 className="text-xl sm:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 2xl:tracking-wider font-semibold  md:mb-[-1rem] ">
 							COMING SOON IN
 						</h2>
 						<Countdown date={ieeeDay} renderer={renderer} />
