@@ -22,12 +22,12 @@ const Footer: React.FC = () => {
 						/>
 					</div>
 					<div className="flex items-center justify-center">
-                        <Image
-                            src={IEECSLogo}
-                            alt="IEEE CS Logo"
-                            className="h-auto w-[130px] md:h-[50px]"
-                        />
-                    </div>
+						<Image
+							src={IEECSLogo}
+							alt="IEEE CS Logo"
+							className="h-auto w-[130px] md:h-[50px]"
+						/>
+					</div>
 					<div className="flex items-center justify-center">
 						<Image
 							src={WIEImage}

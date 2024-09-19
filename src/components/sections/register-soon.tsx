@@ -1,11 +1,16 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Outerlogo from "@/assets/Layer outter LOGO.png";
+import { useScroll } from "@/components/utility/scroll-context";
 
 const RegisterSoon: React.FC = () => {
+	const { registerRef } = useScroll();
 	return (
-		<div className="relative flex items-center justify-center h-[25rem] lg:h-[35rem] overflow-hidden">
-			{/* Background Image */}
+		<div
+			className="relative flex items-center justify-center h-[25rem] lg:h-[35rem] overflow-hidden"
+			ref={registerRef}
+		>
 			<div className="absolute inset-0 flex items-center justify-center">
 				<Image
 					src={Outerlogo}

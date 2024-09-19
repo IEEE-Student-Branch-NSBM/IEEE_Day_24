@@ -4,13 +4,12 @@ import React from "react";
 import Countdown from "react-countdown";
 import Image from "next/image";
 import backdrop from "@/assets/background 2.png";
-import Mobilebackdrop from "@/assets/background-mobile.png"
+import Mobilebackdrop from "@/assets/background-mobile.png";
 import Innerlogo from "@/assets/innerlogo.png";
 import innerlogolight from "@/assets/inner-logo-light.png";
 import Outerlogo from "@/assets/Layer outter LOGO.png";
 import IEEEday_logo from "@/assets/IEEEDAYLOGO.png";
 import CountdownItem from "../ui/count";
-
 
 function formatTime(time: number) {
 	if (time < 0) return "00";
