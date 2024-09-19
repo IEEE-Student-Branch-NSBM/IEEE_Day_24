@@ -28,9 +28,10 @@ export default function Home() {
 					<Session />
 				</ScrollAnimation>
 			</Wrapper>
-			<RegisterSoon />
+			<ScrollAnimation>
+				<RegisterSoon />
+			</ScrollAnimation>
 			<Register />
-			
 		</div>
 	);
 }

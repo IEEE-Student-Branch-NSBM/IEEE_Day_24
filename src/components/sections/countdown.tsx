@@ -4,13 +4,12 @@ import React from "react";
 import Countdown from "react-countdown";
 import Image from "next/image";
 import backdrop from "@/assets/background 2.png";
-import Mobilebackdrop from "@/assets/background-mobile.png"
+import Mobilebackdrop from "@/assets/background-mobile.png";
 import Innerlogo from "@/assets/innerlogo.png";
 import innerlogolight from "@/assets/inner-logo-light.png";
 import Outerlogo from "@/assets/Layer outter LOGO.png";
 import IEEEday_logo from "@/assets/IEEEDAYLOGO.png";
 import CountdownItem from "../ui/count";
-
 
 function formatTime(time: number) {
 	if (time < 0) return "00";
@@ -77,7 +76,7 @@ const CountdownComponent: React.FC = () => {
 				<Image
 					src={Mobilebackdrop}
 					alt="Mobile Background"
-					className="bottom-0 blur-sm -z-10  aspect-[16/9] md:hidden"
+					className="bottom-0 blur-[2px] -z-10  aspect-[16/9] md:hidden"
 					layout="fill"
 					objectFit="cover"
 				/>
@@ -120,7 +119,7 @@ const CountdownComponent: React.FC = () => {
 								src={Innerlogo}
 								alt="Inner Logo"
 								width={140}
-								className="w-[140] md:w-[420px] md:h-[420px] lg:w-[420px] lg:h-[420px] xl:w-[530px] xl:h-[530px] 2xl:w-[700px] 2xl:h-[700px] "
+								className="w-[140]  md:w-[350px] md:h-[350px] lg:w-[440px] lg:h-[440px] xl:w-[530px] xl:h-[530px] 2xl:w-[700px] 2xl:h-[700px] "
 							/>
 						</div>
 						<div className="overflow-hidden sm:hidden">
@@ -128,11 +127,11 @@ const CountdownComponent: React.FC = () => {
 								src={innerlogolight}
 								alt="Inner Logo light"
 								width={140}
-								className="w-[140] md:w-[370px] md:h-[370px] lg:w-[420px] lg:h-[420px] xl:w-[530px] xl:h-[530px] 2xl:w-[700px] 2xl:h-[700px] "
+								className="w-[140] md:w-[360px] md:h-[360px] lg:w-[420px] lg:h-[420px] xl:w-[530px] xl:h-[530px] 2xl:w-[700px] 2xl:h-[700px] "
 							/>
 						</div>
 					</div>
-					<div className="absolute mt-[35rem] md:mt-[-11rem] lg:mt-[-13rem] xl:mb-[2rem] 2xl:mb-[4.5rem] text-center font-sansation ">
+					<div className="absolute mt-[35rem] md:mt-[-9rem] lg:mt-[-13rem] xl:mb-[2rem] 2xl:mb-[4.5rem] text-center font-sansation ">
 						<h2 className="text-xl sm:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 2xl:tracking-wider font-semibold  md:mb-[-1rem] ">
 							COMING SOON IN
 						</h2>
