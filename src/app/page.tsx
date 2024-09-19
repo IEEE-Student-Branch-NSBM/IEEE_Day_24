@@ -5,19 +5,28 @@ import Session from "@/components/sections/Session";
 import Register from "@/components/sections/register";
 import RegisterSoon from "@/components/sections/register-soon";
 import Wrapper from "@/components/utility/wrapper";
+import ScrollAnimation from "@/components/utility/scrollanimation";
 
 export default function Home() {
 	return (
 		<div>
-			<Countdown />
+			<ScrollAnimation>
+				<Countdown />
+			</ScrollAnimation>
 			<Wrapper>
-				<Contextsection />
+				<ScrollAnimation>
+					<Contextsection />
+				</ScrollAnimation>
 			</Wrapper>
 			<Wrapper>
-				<Timeline />
+				<ScrollAnimation>
+					<Timeline />
+				</ScrollAnimation>
 			</Wrapper>
 			<Wrapper>
-				<Session />
+				<ScrollAnimation>
+					<Session />
+				</ScrollAnimation>
 			</Wrapper>
 			<RegisterSoon />
 			<Register />
