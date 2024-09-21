@@ -1,15 +1,15 @@
 import Image from "next/image";
 
 // images
-import RegOpen from "@/assets/reg-open.svg";
-import RegClose from "@/assets/reg-close.svg";
-import EventDay from "@/assets/event-day.svg";
+import RegOpen from "@/assets/reg-open.png";
+import RegClose from "@/assets/reg-closed.png";
+import EventDay from "@/assets/event-day.png";
 import TimelineTextContent from "@/components/ui/TimelineTextContent";
 
 const Timeline = () => {
 	return (
 		<div className="sticky">
-			<h1 className="text-center font-sansation font-semibold text-4xl tracking-widest md:text-6xl py-20 md:">
+			<h1 className="text-center font-sansation font-semibold text-4xl tracking-widest md:text-6xl pt-20 pb-12 md:pb-20">
 				TIMELINE
 			</h1>
 
@@ -20,8 +20,7 @@ const Timeline = () => {
 						className="mx-auto"
 						src={RegOpen}
 						alt="Register Open"
-						width={250}
-						height={250}
+						width={240}
 						style={{
 							maxWidth: "100%",
 							height: "auto",
@@ -29,8 +28,8 @@ const Timeline = () => {
 					/>
 				</div>
 				<div className="relative col-span-1 w-full h-full flex justify-center items-center">
-					<div className="h-full w-1 bg-white"></div>
-					<div className="top-0 absolute w-6 h-6 rounded-full bg-white z-10 text-white text-center"></div>
+					<div className="mt-1 md:mt-20 h-[125%] w-1 bg-white"></div>
+					<div className="top-0.5 absolute w-6 h-6 rounded-full bg-white z-10 text-white text-center"></div>
 				</div>
 				<div className="md:col-span-4 w-full h-full md:mb-5 mb-5 col-span-8">
 					<TimelineTextContent
@@ -41,20 +40,20 @@ const Timeline = () => {
 
 				{/* Stack 2 */}
 				<div className="relative col-span-1 w-full h-full flex justify-center items-center md:hidden">
-					<div className="h-full w-1 bg-white"></div>
+					<div className="h-[110%] w-1 bg-white"></div>
 					<div className="top-0 absolute w-6 h-6 rounded-full bg-white z-10 text-white text-center"></div>
 				</div>
-				<div className="md:col-span-4 w-full h-full md:py-5 mb-5 col-span-8 flex justify-center items-center md:ml-[1rem]">
+				<div className="md:col-span-4 w-full h-full md:pt-14 mb-5 col-span-8 flex justify-center items-center md:ml-[1rem]">
 					<TimelineTextContent
 						title="REGISTRATIONS CLOSE"
 						description="Registrations are closing within a short period of time. Don’t miss your chance to be part of this incredible event!"
 					/>
 				</div>
 				<div className="relative col-span-1 w-full h-full md:flex hidden justify-center items-center">
-					<div className="h-full w-1 bg-white"></div>
-					<div className="top-0 absolute w-6 h-6 rounded-full bg-white z-10 text-white text-center"></div>
+					<div className="h-[100%] mt-32 w-1 bg-white"></div>
+					<div className="top-0.5 md:top-16 absolute w-6 h-6 rounded-full bg-white z-10 text-white text-center"></div>
 				</div>
-				<div className="col-span-4 w-full h-full md:mb-5 mb-5 md:block hidden">
+				<div className="col-span-4 w-full h-full md:mt-14 mb-5 md:block hidden">
 					<Image
 						src={RegClose}
 						alt="Register Closed"
@@ -80,11 +79,10 @@ const Timeline = () => {
 						}}
 					/>
 				</div>
-				<div className="relative col-span-1 w-full h-full flex  justify-center items-center">
-					<div className="h-full w-1 bg-white md:hidden"></div>
-					<div className="top-0 absolute w-6 h-6 rounded-full bg-white z-10 text-white text-center"></div>
+				<div className="relative col-span-1 w-full h-[85%] flex  justify-center items-center">
+					<div className="top-0.5 md:top-12 absolute w-6 h-6 rounded-full bg-white z-10 text-white text-center"></div>
 				</div>
-				<div className="md:col-span-4 w-full h-full  my-0 col-span-8">
+				<div className="md:col-span-4 w-full h-full md:mt-12  my-0 col-span-8">
 					<TimelineTextContent
 						title="IEEE DAY 2024"
 						description="An excitement awaits for on IEEE Day 2024! Secure your spot and be part of the celebration!"
