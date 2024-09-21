@@ -34,8 +34,9 @@ const RegisterSoon: React.FC = () => {
 					Soon!
 				</h1>
 				<p className="text-sm md:text-base lg:text-lg mt-5 mx-16 font-sansation">
-				Get ready for IEEE Day 2024 with the IEEE Student Branch of NSBM! Join a day of innovation, 
-				inspiring talks, and future tech collaboration. Registration opens soon!
+					Get ready for IEEE Day 2024 with the IEEE Student Branch of NSBM! Join
+					a day of innovation, inspiring talks, and future tech collaboration.
+					Registration opens soon!
 				</p>
 				<div className="hidden">
 					<a href="https://forms.gle/U4Wy9fG7qN8U3b5i8">

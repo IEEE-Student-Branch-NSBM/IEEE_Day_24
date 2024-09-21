@@ -20,6 +20,7 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#002E53",
+        timelinefill: "#3DA6FF",
       },
     },
   },
