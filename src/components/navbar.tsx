@@ -25,13 +25,13 @@ const Navbar: React.FC = () => {
 		<div>
 			<nav className=" bg-primary fixed z-50 inset-x-0 top-0 shadow-lg py-2 flex-wrap">
 				<div className="container mx-auto grid grid-cols-2 gap-x-48 md:max-w-[670px] md:gap-x-[460px] lg:max-w-[870px] lg:gap-x-[600px] xl:max-w-[1150px] xl:gap-x-[950px] 2xl:max-w-[1500px] 2xl:gap-x-[1250px]">
-					<div className=" ms-1 sm:ms-[-2rem]">
+					<div className=" ms-1 align-middle sm:ms-[-2rem]">
 						<Image
 							src={logo}
 							width={500}
 							height={300}
 							alt="NSBM Logo"
-							className="py-2 max-w-[220px] sm:max-w-[280px]"
+							className="py-2 mt-1 md:mt-0 max-w-[220px] sm:max-w-[280px]"
 						/>
 					</div>
 

@@ -23,17 +23,17 @@ const RegisterSoon: React.FC = () => {
 			</div>
 
 			{/* Centered Text */}
-			<div className="relative z-10 text-center text-white sm:max-w-[450px] mt-2 lg:max-w-[600px]">
-				<h1 className="text-2xl md:text-3xl lg:text-5xl font-bold uppercase tracking-wider font-sansation">
+			<div className="relative z-10 text-center justify-items-center text-white sm:max-w-[450px] lg:max-w-[600px]">
+				<h1 className="text-2xl md:text-3xl lg:text-5xl font-bold uppercase tracking-widest font-sansation">
 					Registrations
 					{/* Register */}
 					<br />
 					Opening
 					{/* now */}
 					<br />
-					Soon!
+					Soon
 				</h1>
-				<p className="text-sm md:text-base lg:text-lg mt-5 mx-16 font-sansation">
+				<p className="text-sm md:text-base lg:text-lg mt-3 md:mt-5 lg:mt-8 mx-20 md:mx-12 font-sansation">
 					Get ready for IEEE Day 2024 with the IEEE Student Branch of NSBM! Join
 					a day of innovation, inspiring talks, and future tech collaboration.
 					Registration opens soon!

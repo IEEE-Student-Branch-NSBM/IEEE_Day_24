@@ -28,7 +28,7 @@ const Timeline = () => {
 					/>
 				</div>
 				<div className="relative col-span-1 w-full h-full flex justify-center items-center">
-					<div className="mt-1 md:mt-20 h-[125%] w-1 bg-white"></div>
+					<div className="mt-1 md:mt-20 md:h-[125%] h-full w-1 bg-white"></div>
 					<div className="top-0.5 absolute w-6 h-6 rounded-full bg-white z-10 text-white text-center"></div>
 				</div>
 				<div className="md:col-span-4 w-full h-full md:mb-5 mb-5 col-span-8">
@@ -40,7 +40,7 @@ const Timeline = () => {
 
 				{/* Stack 2 */}
 				<div className="relative col-span-1 w-full h-full flex justify-center items-center md:hidden">
-					<div className="h-[110%] w-1 bg-white"></div>
+					<div className="h-full mt-2 w-1 bg-white"></div>
 					<div className="top-0 absolute w-6 h-6 rounded-full bg-white z-10 text-white text-center"></div>
 				</div>
 				<div className="md:col-span-4 w-full h-full md:pt-14 mb-5 col-span-8 flex justify-center items-center md:ml-[1rem]">
