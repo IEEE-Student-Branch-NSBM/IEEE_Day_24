@@ -19,7 +19,6 @@ const RegisterSoon: React.FC = () => {
 					width={2000}
 					height={2000}
 					className="min-w-[600px] md:min-w-[600px] lg:w-[1200px] animate-spin-slow z-0"
-					
 				/>
 			</div>
 
@@ -35,9 +34,8 @@ const RegisterSoon: React.FC = () => {
 					Soon!
 				</h1>
 				<p className="text-sm md:text-base lg:text-lg mt-5 mx-16 font-sansation">
-					Lorem ipsum dolor sit amet, consectetur <br />
-					adipiscing elit, sed do eiusmod tempor incididunt <br />
-					ut labore et dolore magna aliqua.
+				Get ready for IEEE Day 2024 with the IEEE Student Branch of NSBM! Join a day of innovation, 
+				inspiring talks, and future tech collaboration. Registration opens soon!
 				</p>
 				<div className="hidden">
 					<a href="https://forms.gle/U4Wy9fG7qN8U3b5i8">

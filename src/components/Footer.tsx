@@ -41,15 +41,15 @@ const Footer: React.FC = () => {
 				<div className="w-full h-[1.5px] bg-white my-5 rounded-full"></div>
 
 				{/* Title, description + logo, responsive layout */}
-				<div className="flex flex-col md:flex-row justify-between items-center">
+				<div className="flex flex-col md:flex-row justify-between items-center p-6 sm:p-0">
 					<div className="flex flex-col justify-center md:w-7/12">
 						<h1 className="text-white text-2xl md:text-3xl mb-2 font-sansation">
 							Ready to get started?
 						</h1>
-						<p className="text-white md:w-10/12">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-							enim ad minim veniam, quis nostrud exercitation.
+						<p className="text-white md:w-10/12 sm:pr-24">
+						Join IEEE Day 2024 with the IEEE Student Branch of NSBM! Experience innovation, engaging activities, and powerful talks. 
+						Connect with tech enthusiasts and shape the future. Limited spots grab yours now!
+
 						</p>
 					</div>
 					<div className="mt-4 md:mt-0 items-center justify-center hidden md:flex">

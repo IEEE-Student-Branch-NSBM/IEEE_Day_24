@@ -35,7 +35,7 @@ const Timeline = () => {
 				<div className="md:col-span-4 w-full h-full md:mb-5 mb-5 col-span-8">
 					<TimelineTextContent
 						title="REGISTRATIONS OPEN"
-						description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+						description="Get ready to remark your presence in IEEE Day 2024."
 					/>
 				</div>
 
@@ -47,7 +47,7 @@ const Timeline = () => {
 				<div className="md:col-span-4 w-full h-full md:py-5 mb-5 col-span-8 flex justify-center items-center md:ml-[1rem]">
 					<TimelineTextContent
 						title="REGISTRATIONS CLOSE"
-						description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+						description="Registrations are closing within a short period of time. Don’t miss your chance to be part of this incredible event!"
 					/>
 				</div>
 				<div className="relative col-span-1 w-full h-full md:flex hidden justify-center items-center">
@@ -87,7 +87,7 @@ const Timeline = () => {
 				<div className="md:col-span-4 w-full h-full  my-0 col-span-8">
 					<TimelineTextContent
 						title="IEEE DAY 2024"
-						description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+						description="An excitement awaits for on IEEE Day 2024! Secure your spot and be part of the celebration!"
 					/>
 				</div>
 			</div>
