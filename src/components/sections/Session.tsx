@@ -42,7 +42,7 @@ const Session: React.FC = () => {
 	];
 
 	return (
-		<div className="container sticky max-w-5xl mx-auto w-full px-4 mt-5">
+		<div className="hidden container sticky max-w-5xl mx-auto w-full px-4 mt-5">
 			{/* Title */}
 			<h1 className="font-sansation text-center font-semibold tracking-widest text-4xl md:text-6xl pt-10 ">
 				SESSIONS
