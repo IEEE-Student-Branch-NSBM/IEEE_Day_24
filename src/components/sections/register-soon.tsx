@@ -25,20 +25,23 @@ const RegisterSoon: React.FC = () => {
 			{/* Centered Text */}
 			<div className="relative z-10 text-center justify-items-center text-white sm:max-w-[450px] lg:max-w-[600px]">
 				<h1 className="text-2xl md:text-3xl lg:text-5xl font-bold uppercase tracking-widest font-sansation">
-					Registrations
-					{/* Register */}
+					{/* Registrations */}
+					Register
 					<br />
-					Opening
-					{/* now */}
+					{/* Opening */}
+					now
 					<br />
-					Soon
+					{/* Soon */}
 				</h1>
 				<p className="text-sm md:text-base lg:text-lg mt-3 md:mt-5 lg:mt-8 mx-20 md:mx-12 font-sansation">
-					Get ready for IEEE Day 2024 with the IEEE Student Branch of NSBM! Join
+					{/* Get ready for IEEE Day 2024 with the IEEE Student Branch of NSBM! Join
 					a day of innovation, inspiring talks, and future tech collaboration.
-					Registration opens soon!
+					Registration opens soon! */}
+					Join us for IEEE Day 2024 with the IEEE Student Branch of NSBM. 
+					Enjoy innovation, inspiring talks, and exciting opportunities to connect with future tech leaders!
+
 				</p>
-				<div className="hidden">
+				<div className="">
 					<a href="https://forms.gle/U4Wy9fG7qN8U3b5i8">
 						<Button
 							href="/register"
