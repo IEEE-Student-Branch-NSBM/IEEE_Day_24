@@ -24,7 +24,8 @@ const sansation = localFont({
 
 export const metadata: Metadata = {
 	title: "NSBM IEEE Day 24",
-	description: "IEEE Day 2024: Unleash Your Leadership Potential in AI. Join us for this year's IEEE Day celebration, where we aim to create a transformative experience that opens doors to growth, connection, and learning.",
+	description:
+		"IEEE Day 2024: Unleash Your Leadership Potential in AI. Join us for this year's IEEE Day celebration, where we aim to create a transformative experience that opens doors to growth, connection, and learning.",
 };
 
 export default function RootLayout({
