@@ -1,3 +1,4 @@
+import { time } from "console";
 import type { Config } from "tailwindcss";
 const { fontFamily } = require('tailwindcss/defaultTheme')
 
