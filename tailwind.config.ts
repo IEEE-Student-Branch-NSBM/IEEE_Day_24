@@ -1,4 +1,3 @@
-import { time } from "console";
 import type { Config } from "tailwindcss";
 const { fontFamily } = require('tailwindcss/defaultTheme')
 
@@ -18,13 +17,12 @@ const config: Config = {
         'spin-slow': 'spin 30s linear infinite',
       },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
         primary: "#002E53",
         timelinefill: "#3DA6FF",
       },
     },
   },
+  darkMode: "class",
   plugins:[
     require("@designbycode/tailwindcss-text-stroke"),
     require("@designbycode/tailwindcss-text-shadow"),
