@@ -1,5 +1,3 @@
-import { BsCalendarDateFill } from "react-icons/bs";
-
 interface TimelineTextContentProps {
 	title: string;
 	description: string;
@@ -9,7 +7,7 @@ interface TimelineTextContentProps {
 const TimelineTextContent = ({
 	title,
 	description,
-	date
+	date,
 }: TimelineTextContentProps) => {
 	return (
 		<div className="w-full h-full rounded-md px-5 md:pl-4 md:pb-4">
@@ -18,9 +16,7 @@ const TimelineTextContent = ({
 			</h1>
 			<div className="flex items-center py-2 md:hidden ">
 				{/* <BsCalendarDateFill className="text-gray-100 text-lg" /> */}
-				<p className="text-gray-100 text-lg sm:text-md">
-					{date}
-				</p>
+				<p className="text-gray-100 text-lg sm:text-md">{date}</p>
 			</div>
 			<p className="text-gray-100 text-lg sm:text-xl pb-5 md:w-[80%] w-[100%] md:mt-1">
 				{description}
