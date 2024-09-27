@@ -17,8 +17,8 @@ const TimelineTextContent = ({
 				{title}
 			</h1>
 			<div className="flex items-center py-2 md:hidden ">
-				<BsCalendarDateFill className="text-gray-100 text-lg" />
-				<p className="text-gray-100 text-lg sm:text-md ml-2">
+				{/* <BsCalendarDateFill className="text-gray-100 text-lg" /> */}
+				<p className="text-gray-100 text-lg sm:text-md">
 					{date}
 				</p>
 			</div>
