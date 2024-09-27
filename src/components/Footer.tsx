@@ -1,6 +1,6 @@
-import React from "react";
+import type React from "react";
 import Image from "next/image";
-import WIEImage from "@/assets/WIE Logo Bar - White Redused 2.png";
+import WIEImage from "@/assets/wie-logo.png";
 import IEEBarImage from "@/assets/sb-logo.png";
 import IEECSLogo from "@/assets/cs-logo.png";
 import IEEDAYLogo from "@/assets/IEEEDAYLOGO.png";
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
 				</div>
 
 				{/* Divider */}
-				<div className="w-full h-[1.5px] bg-white my-5 rounded-full"></div>
+				<div className="w-full h-[1.5px] bg-white my-5 rounded-full"/>
 
 				{/* Title, description + logo, responsive layout */}
 				<div className="flex flex-col md:flex-row justify-between items-center p-3 sm:px-5 sm:p-0">
