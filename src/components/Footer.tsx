@@ -12,7 +12,6 @@ const Footer: React.FC = () => {
 	return (
 		<div className="bg-primary sticky">
 			<div className="py-5 container max-w-7xl mx-auto w-full pt-10 px-4">
-				{/* Three logos in a row, responsive layout */}
 				<div className="flex flex-col md:flex-row w-full justify-between items-center space-y-6 md:space-y-0">
 					<div className="flex items-center justify-center">
 						<Image
@@ -38,7 +37,7 @@ const Footer: React.FC = () => {
 				</div>
 
 				{/* Divider */}
-				<div className="w-full h-[1.5px] bg-white my-5 rounded-full"/>
+				<div className="w-full h-[1.5px] bg-white my-5 rounded-full" />
 
 				{/* Title, description + logo, responsive layout */}
 				<div className="flex flex-col md:flex-row justify-between items-center p-3 sm:px-5 sm:p-0">
