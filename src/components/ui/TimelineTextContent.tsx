@@ -1,5 +1,3 @@
-import { BsCalendarDateFill } from "react-icons/bs";
-
 interface TimelineTextContentProps {
 	title: string;
 	description: string;
