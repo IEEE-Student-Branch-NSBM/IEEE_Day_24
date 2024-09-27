@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import React from "react";
+import type React from "react";
 import Countdown from "react-countdown";
 import Image from "next/image";
 import backdrop from "@/assets/background 2.png";
@@ -23,7 +23,7 @@ const CountdownComponent: React.FC = () => {
 		setIsClient(true);
 	}, []);
 
-	const ieeeDay = new Date("2024-10-09T00:00:00");
+	const ieeeDay = new Date("2024-10-07T00:00:00");
 
 	const renderer = ({
 		days,
@@ -47,16 +47,15 @@ const CountdownComponent: React.FC = () => {
 					<CountdownItem value={"00"} label="SEC" />
 				</div>
 			);
-		} else {
-			return (
-				<div className="flex justify-center items-center space-x-4 sm:scale-[65%] md:scale-90">
-					<CountdownItem value={formatTime(days).toString()} label="DAYS" />
-					<CountdownItem value={formatTime(hours).toString()} label="HRS" />
-					<CountdownItem value={formatTime(minutes).toString()} label="MIN" />
-					<CountdownItem value={formatTime(seconds).toString()} label="SEC" />
-				</div>
-			);
 		}
+		return (
+			<div className="flex justify-center items-center space-x-4 sm:scale-[65%] md:scale-90">
+				<CountdownItem value={formatTime(days).toString()} label="DAYS" />
+				<CountdownItem value={formatTime(hours).toString()} label="HRS" />
+				<CountdownItem value={formatTime(minutes).toString()} label="MIN" />
+				<CountdownItem value={formatTime(seconds).toString()} label="SEC" />
+			</div>
+		);
 	};
 
 	if (!isClient) {
