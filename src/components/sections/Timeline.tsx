@@ -26,7 +26,7 @@ const Timeline = () => {
 					/>
 				</div>
 				<div className="relative col-span-1 w-full h-full flex justify-center items-center">
-					<div className="mt-1 md:mt-20 md:h-[125%] h-full w-1 bg-gradient-to-b from-timelinefill via-timelinefill via-50% to-white" />
+					<div className="mt-1 md:mt-20 md:h-[125%] h-full w-1 bg-gradient-to-b from-timelinefill via-timelinefill via-70% to-white" />
 					<div className="top-0.5 absolute w-6 h-6 rounded-full bg-timelinefill z-10 text-white text-center" />
 				</div>
 				<div className="md:col-span-4 w-full h-full md:mb-5 mb-5 col-span-8">
@@ -66,12 +66,12 @@ const Timeline = () => {
 				</div>
 
 				{/* Stack 3 */}
-				<div className="col-span-4 w-full h-full md:mb-5  md:block hidden">
+				<div className="col-span-4 w-full h-full md:block hidden">
 					<Image
 						src={EventDay}
 						alt="IEEE Day Logo"
 						className="mx-auto"
-						width={250}
+						width={300}
 						style={{
 							maxWidth: "100%",
 							height: "auto",
