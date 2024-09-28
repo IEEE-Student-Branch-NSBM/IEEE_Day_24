@@ -44,7 +44,7 @@ const Timeline = () => {
 				<div className="md:col-span-4 w-full h-full md:pt-14 mb-5 col-span-8 flex justify-center items-center md:ml-[1rem]">
 					<TimelineTextContent
 						title="REGISTRATIONS CLOSE"
-						date="28th September 2024"
+						date="30th September 2024"
 						description="Registrations are closing within a short period of time. Don’t miss your chance to be part of this incredible event!"
 					/>
 				</div>
