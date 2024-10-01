@@ -26,7 +26,7 @@ const Timeline = () => {
 					/>
 				</div>
 				<div className="relative col-span-1 w-full h-full flex justify-center items-center">
-					<div className="mt-1 md:mt-20 md:h-[125%] h-full w-1 bg-gradient-to-b from-timelinefill via-timelinefill via-70% to-white" />
+					<div className="mt-1 md:mt-20 md:h-[125%] h-full w-1 bg-timelinefill" />
 					<div className="top-0.5 absolute w-6 h-6 rounded-full bg-timelinefill z-10 text-white text-center" />
 				</div>
 				<div className="md:col-span-4 w-full h-full md:mb-5 mb-5 col-span-8">
@@ -38,8 +38,8 @@ const Timeline = () => {
 				</div>
 
 				<div className="relative col-span-1 w-full h-full flex justify-center items-center md:hidden">
-					<div className="h-full mt-2 w-1 bg-white" />
-					<div className="top-0 absolute w-6 h-6 rounded-full bg-white z-10 text-white text-center" />
+					<div className="h-full mt-2 w-1 bg-gradient-to-b from-white to-white" />
+					<div className="top-0 absolute w-6 h-6 rounded-full bg-timelinefill z-10 text-white text-center" />
 				</div>
 				<div className="md:col-span-4 w-full h-full md:pt-14 mb-5 col-span-8 flex justify-center items-center md:ml-[1rem]">
 					<TimelineTextContent
@@ -49,8 +49,8 @@ const Timeline = () => {
 					/>
 				</div>
 				<div className="relative col-span-1 w-full h-full md:flex hidden justify-center items-center">
-					<div className="h-[100%] mt-32 w-1 bg-white" />
-					<div className="top-0.5 md:top-16 absolute w-6 h-6 rounded-full bg-white z-10 text-white text-center" />
+					<div className="h-[100%] mt-32 w-1 bg-gradient-to-b from-white to-white" />
+					<div className="top-0.5 md:top-16 absolute w-6 h-6 rounded-full bg-timelinefill z-10 text-white text-center" />
 				</div>
 				<div className="col-span-4 w-full h-full md:mt-14 mb-5 md:block hidden">
 					<Image
