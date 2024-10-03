@@ -38,7 +38,7 @@ const Timeline = () => {
 				</div>
 
 				<div className="relative col-span-1 w-full h-full flex justify-center items-center md:hidden">
-					<div className="h-full mt-2 w-1 bg-gradient-to-b from-white to-white" />
+					<div className="h-full mt-2 w-1 bg-gradient-to-b from-timelinefill via-timelinefill via-50% to-white" />
 					<div className="top-0 absolute w-6 h-6 rounded-full bg-timelinefill z-10 text-white text-center" />
 				</div>
 				<div className="md:col-span-4 w-full h-full md:pt-14 mb-5 col-span-8 flex justify-center items-center md:ml-[1rem]">
@@ -49,7 +49,7 @@ const Timeline = () => {
 					/>
 				</div>
 				<div className="relative col-span-1 w-full h-full md:flex hidden justify-center items-center">
-					<div className="h-[100%] mt-32 w-1 bg-gradient-to-b from-white to-white" />
+					<div className="h-[100%] mt-32 w-1 bg-gradient-to-b from-timelinefill via-timelinefill via-50% to-white" />
 					<div className="top-0.5 md:top-16 absolute w-6 h-6 rounded-full bg-timelinefill z-10 text-white text-center" />
 				</div>
 				<div className="col-span-4 w-full h-full md:mt-14 mb-5 md:block hidden">
