@@ -23,7 +23,7 @@ const CountdownComponent: React.FC = () => {
 		setIsClient(true);
 	}, []);
 
-	const ieeeDay = new Date("2024-10-07T00:00:00");
+	const ieeeDay = new Date("2024-10-07T09:00:00");
 
 	const renderer = ({
 		days,
